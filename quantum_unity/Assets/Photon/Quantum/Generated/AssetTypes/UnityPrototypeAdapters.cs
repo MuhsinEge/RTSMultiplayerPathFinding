@@ -6,6 +6,22 @@
 using System;
 namespace Quantum.Prototypes.Unity {
   [System.SerializableAttribute()]
+  [Quantum.Prototypes.PrototypeAttribute(typeof(Quantum.CharacterLink))]
+  public class CharacterLink_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.CharacterLink_Prototype> {
+    public System.Int32 teamId;
+    public System.Int32 playerIndex;
+    [Quantum.LocalReference]
+    public global::EntityPrototype target;
+
+    public sealed override Quantum.Prototypes.CharacterLink_Prototype Convert(EntityPrototypeConverter converter) {
+      var result = new Quantum.Prototypes.CharacterLink_Prototype();
+      result.teamId = this.teamId;
+      result.playerIndex = this.playerIndex;
+      converter.Convert(this.target, out result.target);
+      return result;
+    }
+  }
+  [System.SerializableAttribute()]
   [Quantum.Prototypes.PrototypeAttribute(typeof(Quantum.PhysicsJoints3D))]
   public class PhysicsJoints3D_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.PhysicsJoints3D_Prototype> {
     [Quantum.Inspector.DynamicCollectionAttribute()]

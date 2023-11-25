@@ -6,12 +6,13 @@ using UnityEngine.EventSystems;
 [System.Serializable]
 public class Grid : MonoBehaviour, IPointerDownHandler
 {
-    private void Start()
+    GridInputService _gridInputService;
+    public void Initialize(GridInputService gridInputService)
     {
-        this.enabled = true;
+        _gridInputService = gridInputService;
     }
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("Clicked on grid");
+        _gridInputService.GridSelected(this);
     }
 }

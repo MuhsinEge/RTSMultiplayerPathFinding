@@ -1,0 +1,6 @@
+component CharacterLink
+{
+	int teamId;
+	int playerIndex;
+	EntityRef target;
+}

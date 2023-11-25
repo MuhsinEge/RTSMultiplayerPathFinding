@@ -6,4 +6,12 @@ using UnityEngine;
 public class GridLine 
 {
     public Grid[] line;
+
+    public void InitializeGrids(GridInputService gridInputService)
+    {
+        foreach (var grid in line)
+        {
+            grid.Initialize(gridInputService);
+        }
+    }
 }

@@ -1,17 +1,18 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+using ServiceLocator;
 public class GridLayout : MonoBehaviour
 {
-    public GridLine[] grids; 
-    void Start()
+    public GridLine[] grids;
+    private void Start()
     {
-        
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        var gridInputService = Locator.Instance.Get<GridInputService>();
+        foreach (var line in grids)
+        {
+            line.InitializeGrids(gridInputService);    
+        }
     }
 }
