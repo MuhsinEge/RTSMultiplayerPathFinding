@@ -8,8 +8,6 @@ using UnityEngine.EventSystems;
 public class Character : MonoBehaviour, IPointerDownHandler
 {
     public EntityComponentCharacterLink link;
-    public int teamId;
-    public int characterIndex;
     private CharacterInputService _characterInputService;
     private void Awake()
     {

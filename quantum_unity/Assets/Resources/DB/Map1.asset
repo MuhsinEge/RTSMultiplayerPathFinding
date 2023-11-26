@@ -45,6 +45,121 @@ MonoBehaviour:
     MapEntities: []
   Prototypes:
   - CharacterLink: []
+    Grid: []
+    GridDataLink:
+    - gridLayout:
+      - grids:
+        - SceneIndexPlusOne: 2
+        - SceneIndexPlusOne: 3
+        - SceneIndexPlusOne: 4
+        - SceneIndexPlusOne: 5
+        - SceneIndexPlusOne: 6
+        - SceneIndexPlusOne: 7
+        - SceneIndexPlusOne: 8
+        - SceneIndexPlusOne: 9
+        - SceneIndexPlusOne: 10
+      - grids:
+        - SceneIndexPlusOne: 11
+        - SceneIndexPlusOne: 12
+        - SceneIndexPlusOne: 13
+        - SceneIndexPlusOne: 14
+        - SceneIndexPlusOne: 15
+        - SceneIndexPlusOne: 16
+        - SceneIndexPlusOne: 17
+        - SceneIndexPlusOne: 18
+        - SceneIndexPlusOne: 19
+      - grids:
+        - SceneIndexPlusOne: 20
+        - SceneIndexPlusOne: 21
+        - SceneIndexPlusOne: 22
+        - SceneIndexPlusOne: 23
+        - SceneIndexPlusOne: 24
+        - SceneIndexPlusOne: 25
+        - SceneIndexPlusOne: 26
+        - SceneIndexPlusOne: 27
+        - SceneIndexPlusOne: 28
+      - grids:
+        - SceneIndexPlusOne: 29
+        - SceneIndexPlusOne: 30
+        - SceneIndexPlusOne: 31
+        - SceneIndexPlusOne: 32
+        - SceneIndexPlusOne: 33
+        - SceneIndexPlusOne: 34
+        - SceneIndexPlusOne: 35
+        - SceneIndexPlusOne: 36
+        - SceneIndexPlusOne: 37
+      - grids:
+        - SceneIndexPlusOne: 38
+        - SceneIndexPlusOne: 39
+        - SceneIndexPlusOne: 40
+        - SceneIndexPlusOne: 41
+        - SceneIndexPlusOne: 42
+        - SceneIndexPlusOne: 43
+        - SceneIndexPlusOne: 44
+        - SceneIndexPlusOne: 45
+        - SceneIndexPlusOne: 46
+      - grids:
+        - SceneIndexPlusOne: 47
+        - SceneIndexPlusOne: 48
+        - SceneIndexPlusOne: 49
+        - SceneIndexPlusOne: 50
+        - SceneIndexPlusOne: 51
+        - SceneIndexPlusOne: 52
+        - SceneIndexPlusOne: 53
+        - SceneIndexPlusOne: 54
+        - SceneIndexPlusOne: 55
+      - grids:
+        - SceneIndexPlusOne: 56
+        - SceneIndexPlusOne: 57
+        - SceneIndexPlusOne: 58
+        - SceneIndexPlusOne: 59
+        - SceneIndexPlusOne: 60
+        - SceneIndexPlusOne: 61
+        - SceneIndexPlusOne: 62
+        - SceneIndexPlusOne: 63
+        - SceneIndexPlusOne: 64
+      - grids:
+        - SceneIndexPlusOne: 65
+        - SceneIndexPlusOne: 66
+        - SceneIndexPlusOne: 67
+        - SceneIndexPlusOne: 68
+        - SceneIndexPlusOne: 69
+        - SceneIndexPlusOne: 70
+        - SceneIndexPlusOne: 71
+        - SceneIndexPlusOne: 72
+        - SceneIndexPlusOne: 73
+      - grids:
+        - SceneIndexPlusOne: 74
+        - SceneIndexPlusOne: 75
+        - SceneIndexPlusOne: 76
+        - SceneIndexPlusOne: 77
+        - SceneIndexPlusOne: 78
+        - SceneIndexPlusOne: 79
+        - SceneIndexPlusOne: 80
+        - SceneIndexPlusOne: 81
+        - SceneIndexPlusOne: 82
+    CharacterController2D: []
+    CharacterController3D: []
+    NavMeshAvoidanceAgent: []
+    NavMeshAvoidanceObstacle: []
+    NavMeshPathfinder: []
+    NavMeshSteeringAgent: []
+    PhysicsBody2D: []
+    PhysicsBody3D: []
+    PhysicsCollider2D: []
+    PhysicsCollider3D: []
+    PhysicsCallbacks2D: []
+    PhysicsCallbacks3D: []
+    Transform2D: []
+    Transform2DVertical: []
+    Transform3D: []
+    View: []
+    PhysicsJoints2D: []
+    PhysicsJoints3D: []
+  - CharacterLink: []
+    Grid:
+    - index: 0
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -102,7 +217,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -115998
+          RawValue: -262144
       Rotation:
         X:
           RawValue: 0
@@ -114,6 +229,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 1
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -171,7 +289,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -115998
+          RawValue: -262144
       Rotation:
         X:
           RawValue: 0
@@ -183,6 +301,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 2
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -240,7 +361,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -115998
+          RawValue: -262144
       Rotation:
         X:
           RawValue: 0
@@ -252,6 +373,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 3
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -309,7 +433,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -115998
+          RawValue: -262144
       Rotation:
         X:
           RawValue: 0
@@ -321,6 +445,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 4
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -378,7 +505,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -115998
+          RawValue: -262144
       Rotation:
         X:
           RawValue: 0
@@ -390,6 +517,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 5
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -447,7 +577,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -115998
+          RawValue: -262144
       Rotation:
         X:
           RawValue: 0
@@ -459,6 +589,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 6
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -516,7 +649,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -115998
+          RawValue: -262144
       Rotation:
         X:
           RawValue: 0
@@ -528,6 +661,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 7
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -585,7 +721,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -115998
+          RawValue: -262144
       Rotation:
         X:
           RawValue: 0
@@ -597,6 +733,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 8
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -654,7 +793,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -115998
+          RawValue: -262144
       Rotation:
         X:
           RawValue: 0
@@ -666,6 +805,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 0
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -723,7 +865,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -50462
+          RawValue: -196608
       Rotation:
         X:
           RawValue: 0
@@ -735,6 +877,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 1
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -792,7 +937,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -50462
+          RawValue: -196608
       Rotation:
         X:
           RawValue: 0
@@ -804,6 +949,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 2
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -861,7 +1009,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -50462
+          RawValue: -196608
       Rotation:
         X:
           RawValue: 0
@@ -873,6 +1021,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 3
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -930,7 +1081,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -50462
+          RawValue: -196608
       Rotation:
         X:
           RawValue: 0
@@ -942,6 +1093,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 4
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -999,7 +1153,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -50462
+          RawValue: -196608
       Rotation:
         X:
           RawValue: 0
@@ -1011,6 +1165,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 5
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1068,7 +1225,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -50462
+          RawValue: -196608
       Rotation:
         X:
           RawValue: 0
@@ -1080,6 +1237,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 6
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1137,7 +1297,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -50462
+          RawValue: -196608
       Rotation:
         X:
           RawValue: 0
@@ -1149,6 +1309,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 7
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1206,7 +1369,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -50462
+          RawValue: -196608
       Rotation:
         X:
           RawValue: 0
@@ -1218,6 +1381,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 8
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1275,7 +1441,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: -50462
+          RawValue: -196608
       Rotation:
         X:
           RawValue: 0
@@ -1287,6 +1453,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 0
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1344,7 +1513,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 15073
+          RawValue: -131072
       Rotation:
         X:
           RawValue: 0
@@ -1356,6 +1525,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 1
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1413,7 +1585,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 15073
+          RawValue: -131072
       Rotation:
         X:
           RawValue: 0
@@ -1425,6 +1597,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 2
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1482,7 +1657,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 15073
+          RawValue: -131072
       Rotation:
         X:
           RawValue: 0
@@ -1494,6 +1669,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 3
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1551,7 +1729,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 15073
+          RawValue: -131072
       Rotation:
         X:
           RawValue: 0
@@ -1563,6 +1741,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 4
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1620,7 +1801,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 15073
+          RawValue: -131072
       Rotation:
         X:
           RawValue: 0
@@ -1632,6 +1813,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 5
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1689,7 +1873,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 15073
+          RawValue: -131072
       Rotation:
         X:
           RawValue: 0
@@ -1701,6 +1885,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 6
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1758,7 +1945,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 15073
+          RawValue: -131072
       Rotation:
         X:
           RawValue: 0
@@ -1770,6 +1957,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 7
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1827,7 +2017,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 15073
+          RawValue: -131072
       Rotation:
         X:
           RawValue: 0
@@ -1839,6 +2029,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 8
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1896,7 +2089,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 15073
+          RawValue: -131072
       Rotation:
         X:
           RawValue: 0
@@ -1908,6 +2101,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 0
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -1965,7 +2161,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 80609
+          RawValue: -65536
       Rotation:
         X:
           RawValue: 0
@@ -1977,6 +2173,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 1
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2034,7 +2233,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 80609
+          RawValue: -65536
       Rotation:
         X:
           RawValue: 0
@@ -2046,6 +2245,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 2
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2103,7 +2305,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 80609
+          RawValue: -65536
       Rotation:
         X:
           RawValue: 0
@@ -2115,6 +2317,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 3
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2172,7 +2377,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 80609
+          RawValue: -65536
       Rotation:
         X:
           RawValue: 0
@@ -2184,6 +2389,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 4
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2241,7 +2449,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 80609
+          RawValue: -65536
       Rotation:
         X:
           RawValue: 0
@@ -2253,6 +2461,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 5
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2310,7 +2521,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 80609
+          RawValue: -65536
       Rotation:
         X:
           RawValue: 0
@@ -2322,6 +2533,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 6
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2379,7 +2593,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 80609
+          RawValue: -65536
       Rotation:
         X:
           RawValue: 0
@@ -2391,6 +2605,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 7
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2448,7 +2665,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 80609
+          RawValue: -65536
       Rotation:
         X:
           RawValue: 0
@@ -2460,6 +2677,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 8
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2517,7 +2737,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 80609
+          RawValue: -65536
       Rotation:
         X:
           RawValue: 0
@@ -2529,6 +2749,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 0
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2586,7 +2809,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 146145
+          RawValue: 0
       Rotation:
         X:
           RawValue: 0
@@ -2598,6 +2821,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 1
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2655,7 +2881,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 146145
+          RawValue: 0
       Rotation:
         X:
           RawValue: 0
@@ -2667,6 +2893,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 2
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2724,7 +2953,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 146145
+          RawValue: 0
       Rotation:
         X:
           RawValue: 0
@@ -2736,6 +2965,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 3
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2793,7 +3025,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 146145
+          RawValue: 0
       Rotation:
         X:
           RawValue: 0
@@ -2805,6 +3037,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 4
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2862,7 +3097,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 146145
+          RawValue: 0
       Rotation:
         X:
           RawValue: 0
@@ -2874,6 +3109,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 5
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -2931,7 +3169,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 146145
+          RawValue: 0
       Rotation:
         X:
           RawValue: 0
@@ -2943,6 +3181,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 6
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3000,7 +3241,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 146145
+          RawValue: 0
       Rotation:
         X:
           RawValue: 0
@@ -3012,6 +3253,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 7
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3069,7 +3313,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 146145
+          RawValue: 0
       Rotation:
         X:
           RawValue: 0
@@ -3081,6 +3325,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 8
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3138,7 +3385,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 146145
+          RawValue: 0
       Rotation:
         X:
           RawValue: 0
@@ -3150,6 +3397,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 0
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3207,7 +3457,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 211681
+          RawValue: 65536
       Rotation:
         X:
           RawValue: 0
@@ -3219,6 +3469,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 1
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3276,7 +3529,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 211681
+          RawValue: 65536
       Rotation:
         X:
           RawValue: 0
@@ -3288,6 +3541,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 2
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3345,7 +3601,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 211681
+          RawValue: 65536
       Rotation:
         X:
           RawValue: 0
@@ -3357,6 +3613,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 3
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3414,7 +3673,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 211681
+          RawValue: 65536
       Rotation:
         X:
           RawValue: 0
@@ -3426,6 +3685,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 4
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3483,7 +3745,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 211681
+          RawValue: 65536
       Rotation:
         X:
           RawValue: 0
@@ -3495,6 +3757,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 5
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3552,7 +3817,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 211681
+          RawValue: 65536
       Rotation:
         X:
           RawValue: 0
@@ -3564,6 +3829,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 6
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3621,7 +3889,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 211681
+          RawValue: 65536
       Rotation:
         X:
           RawValue: 0
@@ -3633,6 +3901,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 7
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3690,7 +3961,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 211681
+          RawValue: 65536
       Rotation:
         X:
           RawValue: 0
@@ -3702,6 +3973,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 8
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3759,7 +4033,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 211681
+          RawValue: 65536
       Rotation:
         X:
           RawValue: 0
@@ -3771,6 +4045,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 0
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3828,7 +4105,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 277217
+          RawValue: 131072
       Rotation:
         X:
           RawValue: 0
@@ -3840,6 +4117,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 1
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3897,7 +4177,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 277217
+          RawValue: 131072
       Rotation:
         X:
           RawValue: 0
@@ -3909,6 +4189,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 2
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -3966,7 +4249,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 277217
+          RawValue: 131072
       Rotation:
         X:
           RawValue: 0
@@ -3978,6 +4261,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 3
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4035,7 +4321,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 277217
+          RawValue: 131072
       Rotation:
         X:
           RawValue: 0
@@ -4047,6 +4333,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 4
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4104,7 +4393,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 277217
+          RawValue: 131072
       Rotation:
         X:
           RawValue: 0
@@ -4116,6 +4405,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 5
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4173,7 +4465,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 277217
+          RawValue: 131072
       Rotation:
         X:
           RawValue: 0
@@ -4185,6 +4477,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 6
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4242,7 +4537,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 277217
+          RawValue: 131072
       Rotation:
         X:
           RawValue: 0
@@ -4254,6 +4549,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 7
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4311,7 +4609,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 277217
+          RawValue: 131072
       Rotation:
         X:
           RawValue: 0
@@ -4323,6 +4621,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 8
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4380,7 +4681,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 277217
+          RawValue: 131072
       Rotation:
         X:
           RawValue: 0
@@ -4392,6 +4693,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 0
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4449,7 +4753,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 342753
+          RawValue: 196608
       Rotation:
         X:
           RawValue: 0
@@ -4461,6 +4765,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 1
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4518,7 +4825,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 342753
+          RawValue: 196608
       Rotation:
         X:
           RawValue: 0
@@ -4530,6 +4837,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 2
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4587,7 +4897,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 342753
+          RawValue: 196608
       Rotation:
         X:
           RawValue: 0
@@ -4599,6 +4909,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 3
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4656,7 +4969,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 342753
+          RawValue: 196608
       Rotation:
         X:
           RawValue: 0
@@ -4668,6 +4981,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 4
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4725,7 +5041,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 342753
+          RawValue: 196608
       Rotation:
         X:
           RawValue: 0
@@ -4737,6 +5053,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 5
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4794,7 +5113,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 342753
+          RawValue: 196608
       Rotation:
         X:
           RawValue: 0
@@ -4806,6 +5125,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 6
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4863,7 +5185,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 342753
+          RawValue: 196608
       Rotation:
         X:
           RawValue: 0
@@ -4875,6 +5197,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 7
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -4932,7 +5257,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 342753
+          RawValue: 196608
       Rotation:
         X:
           RawValue: 0
@@ -4944,6 +5269,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 8
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5001,7 +5329,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 342753
+          RawValue: 196608
       Rotation:
         X:
           RawValue: 0
@@ -5013,6 +5341,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 0
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5070,7 +5401,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 408289
+          RawValue: 262144
       Rotation:
         X:
           RawValue: 0
@@ -5082,6 +5413,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 1
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5139,7 +5473,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 408289
+          RawValue: 262144
       Rotation:
         X:
           RawValue: 0
@@ -5151,6 +5485,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 2
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5208,7 +5545,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 408289
+          RawValue: 262144
       Rotation:
         X:
           RawValue: 0
@@ -5220,6 +5557,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 3
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5277,7 +5617,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 408289
+          RawValue: 262144
       Rotation:
         X:
           RawValue: 0
@@ -5289,6 +5629,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 4
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5346,7 +5689,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 408289
+          RawValue: 262144
       Rotation:
         X:
           RawValue: 0
@@ -5358,6 +5701,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 5
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5415,7 +5761,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 408289
+          RawValue: 262144
       Rotation:
         X:
           RawValue: 0
@@ -5427,6 +5773,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 6
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5484,7 +5833,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 408289
+          RawValue: 262144
       Rotation:
         X:
           RawValue: 0
@@ -5496,6 +5845,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 7
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5553,7 +5905,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 408289
+          RawValue: 262144
       Rotation:
         X:
           RawValue: 0
@@ -5565,6 +5917,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - CharacterLink: []
+    Grid:
+    - index: 8
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5622,7 +5977,7 @@ MonoBehaviour:
         Y:
           RawValue: 0
         Z:
-          RawValue: 408289
+          RawValue: 262144
       Rotation:
         X:
           RawValue: 0
@@ -5636,8 +5991,10 @@ MonoBehaviour:
   - CharacterLink:
     - teamId: 0
       playerIndex: 0
-      target:
-        SceneIndexPlusOne: 0
+      targetLine: -1
+      targetGrid: -1
+    Grid: []
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5695,7 +6052,7 @@ MonoBehaviour:
         Y:
           RawValue: 32768
         Z:
-          RawValue: -114688
+          RawValue: -262144
       Rotation:
         X:
           RawValue: 0
@@ -5709,8 +6066,10 @@ MonoBehaviour:
   - CharacterLink:
     - teamId: 0
       playerIndex: 1
-      target:
-        SceneIndexPlusOne: 0
+      targetLine: -1
+      targetGrid: -1
+    Grid: []
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5768,7 +6127,7 @@ MonoBehaviour:
         Y:
           RawValue: 32768
         Z:
-          RawValue: -49152
+          RawValue: -196608
       Rotation:
         X:
           RawValue: 0
@@ -5782,8 +6141,10 @@ MonoBehaviour:
   - CharacterLink:
     - teamId: 0
       playerIndex: 2
-      target:
-        SceneIndexPlusOne: 0
+      targetLine: -1
+      targetGrid: -1
+    Grid: []
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5841,7 +6202,7 @@ MonoBehaviour:
         Y:
           RawValue: 32768
         Z:
-          RawValue: -114688
+          RawValue: -262144
       Rotation:
         X:
           RawValue: 0
@@ -5855,8 +6216,10 @@ MonoBehaviour:
   - CharacterLink:
     - teamId: 1
       playerIndex: 0
-      target:
-        SceneIndexPlusOne: 0
+      targetLine: -1
+      targetGrid: -1
+    Grid: []
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5914,7 +6277,7 @@ MonoBehaviour:
         Y:
           RawValue: 32768
         Z:
-          RawValue: 409600
+          RawValue: 262144
       Rotation:
         X:
           RawValue: 0
@@ -5928,8 +6291,10 @@ MonoBehaviour:
   - CharacterLink:
     - teamId: 1
       playerIndex: 1
-      target:
-        SceneIndexPlusOne: 0
+      targetLine: -1
+      targetGrid: -1
+    Grid: []
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -5987,7 +6352,7 @@ MonoBehaviour:
         Y:
           RawValue: 32768
         Z:
-          RawValue: 409600
+          RawValue: 262144
       Rotation:
         X:
           RawValue: 0
@@ -6001,8 +6366,10 @@ MonoBehaviour:
   - CharacterLink:
     - teamId: 1
       playerIndex: 2
-      target:
-        SceneIndexPlusOne: 0
+      targetLine: -1
+      targetGrid: -1
+    Grid: []
+    GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -6060,7 +6427,7 @@ MonoBehaviour:
         Y:
           RawValue: 32768
         Z:
-          RawValue: 344064
+          RawValue: 196608
       Rotation:
         X:
           RawValue: 0

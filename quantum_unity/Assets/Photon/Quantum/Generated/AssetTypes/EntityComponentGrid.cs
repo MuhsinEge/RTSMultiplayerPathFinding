@@ -4,5 +4,5 @@
 // </auto-generated>
 
 [UnityEngine.DisallowMultipleComponent()]
-public partial class EntityComponentCharacterLink : EntityComponentBase<Quantum.Prototypes.CharacterLink_Prototype> {
+public partial class EntityComponentGrid : EntityComponentBase<Quantum.Prototypes.Grid_Prototype> {
 }

@@ -1,0 +1,3 @@
+component GridDataLink{
+	array<GridLine>[9] gridLayout;
+}

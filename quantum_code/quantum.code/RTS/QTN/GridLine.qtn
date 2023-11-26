@@ -1,0 +1,3 @@
+struct GridLine{
+	array<EntityRef>[9] grids;
+}

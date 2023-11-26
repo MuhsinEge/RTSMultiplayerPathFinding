@@ -78,6 +78,8 @@
     <Compile Include="Core\Core.cs" />
     <Compile Include="Frame.User.cs" />
     <Compile Include="FrameContext.User.cs" />
+    <Compile Include="RTS\CharacterMover.cs" />
+    <Compile Include="RTS\InputHandler.cs" />
     <Compile Include="RuntimeConfig.User.cs" />
     <Compile Include="RuntimePlayer.User.cs" />
     <Compile Include="SimulationConfig.User.cs" />
@@ -88,7 +90,11 @@
     <EmbeddedResource Include="db.json" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="RTS\CharacterLink.qtn" />
+    <None Include="RTS\QTN\CharacterLink.qtn" />
+    <None Include="RTS\QTN\Grid.qtn" />
+    <None Include="RTS\QTN\GridDataLink.qtn" />
+    <None Include="RTS\QTN\GridLine.qtn" />
+    <None Include="RTS\QTN\Input.qtn" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

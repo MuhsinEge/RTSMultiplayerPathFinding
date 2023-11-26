@@ -6,18 +6,27 @@
 using System;
 namespace Quantum.Prototypes.Unity {
   [System.SerializableAttribute()]
-  [Quantum.Prototypes.PrototypeAttribute(typeof(Quantum.CharacterLink))]
-  public class CharacterLink_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.CharacterLink_Prototype> {
-    public System.Int32 teamId;
-    public System.Int32 playerIndex;
-    [Quantum.LocalReference]
-    public global::EntityPrototype target;
+  [Quantum.Prototypes.PrototypeAttribute(typeof(Quantum.GridDataLink))]
+  public class GridDataLink_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.GridDataLink_Prototype> {
+    [Quantum.Inspector.ArrayLengthAttribute((Int32)9)]
+    public GridLine_Prototype[] gridLayout = new GridLine_Prototype[9];
 
-    public sealed override Quantum.Prototypes.CharacterLink_Prototype Convert(EntityPrototypeConverter converter) {
-      var result = new Quantum.Prototypes.CharacterLink_Prototype();
-      result.teamId = this.teamId;
-      result.playerIndex = this.playerIndex;
-      converter.Convert(this.target, out result.target);
+    public sealed override Quantum.Prototypes.GridDataLink_Prototype Convert(EntityPrototypeConverter converter) {
+      var result = new Quantum.Prototypes.GridDataLink_Prototype();
+      result.gridLayout = System.Array.ConvertAll(this.gridLayout, x => x.Convert(converter));
+      return result;
+    }
+  }
+  [System.SerializableAttribute()]
+  [Quantum.Prototypes.PrototypeAttribute(typeof(Quantum.GridLine))]
+  public class GridLine_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.GridLine_Prototype> {
+    [Quantum.Inspector.ArrayLengthAttribute((Int32)9)]
+    [Quantum.LocalReference]
+    public global::EntityPrototype[] grids = new global::EntityPrototype[9];
+
+    public sealed override Quantum.Prototypes.GridLine_Prototype Convert(EntityPrototypeConverter converter) {
+      var result = new Quantum.Prototypes.GridLine_Prototype();
+      result.grids = System.Array.ConvertAll(this.grids, x => { converter.Convert(x, out Quantum.MapEntityId tmp); return tmp; });
       return result;
     }
   }

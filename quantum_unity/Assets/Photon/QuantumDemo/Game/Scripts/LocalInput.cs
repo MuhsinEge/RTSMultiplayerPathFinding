@@ -4,13 +4,23 @@ using Quantum;
 using UnityEngine;
 
 public class LocalInput : MonoBehaviour {
-    
-  private void OnEnable() {
+
+    public EntityView characterLink;
+    public bool sendInput = false;
+  private void Start() {
     QuantumCallback.Subscribe(this, (CallbackPollInput callback) => PollInput(callback));
   }
 
   public void PollInput(CallbackPollInput callback) {
-    Quantum.Input i = new Quantum.Input(); 
-    callback.SetInput(i, DeterministicInputFlags.Repeatable);
-  }
+        if (!sendInput) return;
+        
+        Quantum.Input input = new Quantum.Input
+        {
+            character = characterLink.EntityRef,
+            selectedGrid = 0,
+            selectedLine = 0,
+        };
+        callback.SetInput(input, DeterministicInputFlags.Repeatable);
+        sendInput = false;
+    }
 }

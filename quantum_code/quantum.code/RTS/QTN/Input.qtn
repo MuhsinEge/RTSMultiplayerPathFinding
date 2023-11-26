@@ -1,0 +1,6 @@
+input
+{
+	EntityRef character;
+	int selectedLine;
+	int selectedGrid;
+}
