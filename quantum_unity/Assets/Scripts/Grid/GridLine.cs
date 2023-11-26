@@ -5,13 +5,16 @@ using UnityEngine;
 [System.Serializable]
 public class GridLine 
 {
-    public Grid[] line;
-
-    public void InitializeGrids(GridInputService gridInputService)
+    public GridEntity[] line;
+    private int _lineIndex;
+    public void InitializeGrids(GridInputService gridInputService, int lineIndex)
     {
+        _lineIndex = lineIndex;
+        int counter = 0;
         foreach (var grid in line)
         {
-            grid.Initialize(gridInputService);
+            grid.Initialize(gridInputService,_lineIndex,counter);
+            counter++;
         }
     }
 }

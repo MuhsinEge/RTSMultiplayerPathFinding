@@ -4,11 +4,15 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 [System.Serializable]
-public class Grid : MonoBehaviour, IPointerDownHandler
+public class GridEntity : MonoBehaviour, IPointerDownHandler
 {
     GridInputService _gridInputService;
-    public void Initialize(GridInputService gridInputService)
+    [HideInInspector] public int gridLine;
+    [HideInInspector] public int gridIndex;
+    public void Initialize(GridInputService gridInputService, int gridLine, int gridIndex)
     {
+        this.gridLine = gridLine;
+        this.gridIndex = gridIndex;
         _gridInputService = gridInputService;
     }
     public void OnPointerDown(PointerEventData eventData)

@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class GridInputService : IService
 {
-    public EventHandler<Grid> onGridSelected;
+    public EventHandler<GridEntity> onGridSelected;
 
-    public void GridSelected(Grid grid)
+    public void GridSelected(GridEntity grid)
     {
         Debug.Log("Selected grid");
         onGridSelected?.Invoke(this, grid);
