@@ -439,6 +439,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 0
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &47844716
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +758,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 3
+    isObstacle:
+      Value: 1
+    isCollectable:
+      Value: 0
 --- !u!1001 &54968527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -762,6 +770,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 778720530}
     m_Modifications:
+    - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: Prototype.gridRef
+      value: 
+      objectReference: {fileID: 102758550}
     - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: Prototype.targetGrid
@@ -777,6 +790,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4690311513693018640, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8b37e156fd815834f949668dc1e0b6aa, type: 2}
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -876,7 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ca3669bbdc3c643bc0f43e43c38bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  link: {fileID: 54968533}
+  characterLink: {fileID: 0}
 --- !u!135 &54968532
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -898,18 +916,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &54968533 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
-    type: 3}
-  m_PrefabInstance: {fileID: 54968527}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54968530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12c76d7b1333f8c49ac37c7a3d819c1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &58682319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,6 +1231,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 4
+    isObstacle:
+      Value: 1
+    isCollectable:
+      Value: 0
 --- !u!1 &90932518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,6 +1651,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 8
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &96838317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1956,6 +1970,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 7
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &99897186
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,6 +2289,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 3
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &102758548
 GameObject:
   m_ObjectHideFlags: 0
@@ -3015,6 +3037,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 3
+    isObstacle:
+      Value: 1
+    isCollectable:
+      Value: 0
 --- !u!1 &144496688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3330,6 +3356,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 5
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &171284628
 GameObject:
   m_ObjectHideFlags: 0
@@ -3645,6 +3675,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 5
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &206999464
 GameObject:
   m_ObjectHideFlags: 0
@@ -4005,6 +4039,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 6
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &251435011
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,6 +4358,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 3
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &256347812
 GameObject:
   m_ObjectHideFlags: 0
@@ -4635,6 +4677,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 6
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &318302016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4690,6 +4736,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
+      propertyPath: Prototype.gridRef
+      value: 
+      objectReference: {fileID: 102758550}
+    - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
       propertyPath: Prototype.targetGrid
       value: -1
       objectReference: {fileID: 0}
@@ -4708,6 +4759,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 4690311513693018640, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e9c39843aa00b644eaca4d1a17595c9b, type: 2}
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4807,7 +4863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ca3669bbdc3c643bc0f43e43c38bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  link: {fileID: 327828790}
+  characterLink: {fileID: 0}
 --- !u!135 &327828789
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4829,18 +4885,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &327828790 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
-    type: 3}
-  m_PrefabInstance: {fileID: 327828784}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 327828787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12c76d7b1333f8c49ac37c7a3d819c1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &331530661
 GameObject:
   m_ObjectHideFlags: 0
@@ -5156,6 +5200,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 0
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &348310621
 GameObject:
   m_ObjectHideFlags: 0
@@ -5471,6 +5519,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 2
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &359558947
 GameObject:
   m_ObjectHideFlags: 0
@@ -5786,6 +5838,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 3
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &366486515
 GameObject:
   m_ObjectHideFlags: 0
@@ -6101,6 +6157,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 8
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &373823542
 GameObject:
   m_ObjectHideFlags: 0
@@ -6416,6 +6476,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 8
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &387022201
 GameObject:
   m_ObjectHideFlags: 0
@@ -6731,6 +6795,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 2
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &394500852
 GameObject:
   m_ObjectHideFlags: 0
@@ -9321,6 +9389,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 4
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &444674265
 GameObject:
   m_ObjectHideFlags: 0
@@ -9636,6 +9708,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 7
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &451125869
 GameObject:
   m_ObjectHideFlags: 0
@@ -9951,6 +10027,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 1
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &497144118
 GameObject:
   m_ObjectHideFlags: 0
@@ -10306,6 +10386,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 7
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &532947424
 GameObject:
   m_ObjectHideFlags: 0
@@ -10621,6 +10705,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 6
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &635132225
 GameObject:
   m_ObjectHideFlags: 0
@@ -10936,6 +11024,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 2
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &655270739
 GameObject:
   m_ObjectHideFlags: 0
@@ -11251,6 +11343,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 1
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &668980687
 GameObject:
   m_ObjectHideFlags: 0
@@ -11566,6 +11662,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 0
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &695237248
 GameObject:
   m_ObjectHideFlags: 0
@@ -11881,6 +11981,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 0
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &706910042
 GameObject:
   m_ObjectHideFlags: 0
@@ -12196,6 +12300,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 1
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &755159589
 GameObject:
   m_ObjectHideFlags: 0
@@ -12511,6 +12619,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 5
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &765938957
 GameObject:
   m_ObjectHideFlags: 0
@@ -12826,6 +12938,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 1
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &778720529
 GameObject:
   m_ObjectHideFlags: 0
@@ -13175,6 +13291,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 8
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &820688852
 GameObject:
   m_ObjectHideFlags: 0
@@ -13490,6 +13610,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 0
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &840925658
 GameObject:
   m_ObjectHideFlags: 0
@@ -13805,6 +13929,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 3
+    isObstacle:
+      Value: 1
+    isCollectable:
+      Value: 0
 --- !u!1 &849652684
 GameObject:
   m_ObjectHideFlags: 0
@@ -14120,6 +14248,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 3
+    isObstacle:
+      Value: 1
+    isCollectable:
+      Value: 0
 --- !u!1 &860971341
 GameObject:
   m_ObjectHideFlags: 0
@@ -14435,6 +14567,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 6
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &875301228
 GameObject:
   m_ObjectHideFlags: 0
@@ -14784,6 +14920,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 4
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &956166344
 GameObject:
   m_ObjectHideFlags: 0
@@ -15099,6 +15239,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 2
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &957697188
 GameObject:
   m_ObjectHideFlags: 0
@@ -15414,6 +15558,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 8
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &987400659
 GameObject:
   m_ObjectHideFlags: 0
@@ -15775,6 +15923,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 1
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1018457175
 GameObject:
   m_ObjectHideFlags: 0
@@ -16090,6 +16242,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 2
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1025981626
 GameObject:
   m_ObjectHideFlags: 0
@@ -16405,6 +16561,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 8
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1028141769
 GameObject:
   m_ObjectHideFlags: 0
@@ -16760,6 +16920,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 7
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1001 &1097557742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16775,6 +16939,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
+      propertyPath: Prototype.gridRef
+      value: 
+      objectReference: {fileID: 102758550}
+    - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
       propertyPath: Prototype.targetGrid
       value: -1
       objectReference: {fileID: 0}
@@ -16788,6 +16957,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4690311513693018640, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e9c39843aa00b644eaca4d1a17595c9b, type: 2}
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16887,7 +17061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ca3669bbdc3c643bc0f43e43c38bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  link: {fileID: 1097557748}
+  characterLink: {fileID: 0}
 --- !u!135 &1097557747
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16909,18 +17083,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1097557748 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1097557742}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097557745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12c76d7b1333f8c49ac37c7a3d819c1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1101967712
 GameObject:
   m_ObjectHideFlags: 0
@@ -17316,6 +17478,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 1
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1140842023
 GameObject:
   m_ObjectHideFlags: 0
@@ -17631,6 +17797,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 5
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1147151553
 GameObject:
   m_ObjectHideFlags: 0
@@ -17946,6 +18116,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 1
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1194522652
 GameObject:
   m_ObjectHideFlags: 0
@@ -18261,6 +18435,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 4
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1242368506
 GameObject:
   m_ObjectHideFlags: 0
@@ -18576,6 +18754,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 6
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1250657288
 GameObject:
   m_ObjectHideFlags: 0
@@ -18891,6 +19073,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 7
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1260348151
 GameObject:
   m_ObjectHideFlags: 0
@@ -19206,6 +19392,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 0
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1310930388
 GameObject:
   m_ObjectHideFlags: 0
@@ -19521,6 +19711,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 6
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1314470146
 GameObject:
   m_ObjectHideFlags: 0
@@ -19876,6 +20070,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 2
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1344589989
 GameObject:
   m_ObjectHideFlags: 0
@@ -20191,6 +20389,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 3
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1362069072
 GameObject:
   m_ObjectHideFlags: 0
@@ -20506,6 +20708,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 4
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1001 &1367484111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20519,6 +20725,11 @@ PrefabInstance:
       propertyPath: Prototype.teamId
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: Prototype.gridRef
+      value: 
+      objectReference: {fileID: 102758550}
     - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: Prototype.targetGrid
@@ -20539,6 +20750,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4690311513693018640, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e9c39843aa00b644eaca4d1a17595c9b, type: 2}
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20638,7 +20854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ca3669bbdc3c643bc0f43e43c38bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  link: {fileID: 1367484117}
+  characterLink: {fileID: 0}
 --- !u!135 &1367484116
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20660,18 +20876,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1367484117 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1367484111}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367484114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12c76d7b1333f8c49ac37c7a3d819c1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1367842380
 GameObject:
   m_ObjectHideFlags: 0
@@ -20987,6 +21191,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 8
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1379248774
 GameObject:
   m_ObjectHideFlags: 0
@@ -21476,6 +21684,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 3
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1443350359
 GameObject:
   m_ObjectHideFlags: 0
@@ -21791,6 +22003,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 6
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1494399887
 GameObject:
   m_ObjectHideFlags: 0
@@ -22106,6 +22322,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 4
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1498110202
 GameObject:
   m_ObjectHideFlags: 0
@@ -22421,6 +22641,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 4
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1507905451
 GameObject:
   m_ObjectHideFlags: 0
@@ -22736,6 +22960,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 7
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1529614506
 GameObject:
   m_ObjectHideFlags: 0
@@ -23051,6 +23279,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 7
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1541964042
 GameObject:
   m_ObjectHideFlags: 0
@@ -23366,6 +23598,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 7
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1546107983
 GameObject:
   m_ObjectHideFlags: 0
@@ -23681,6 +23917,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 0
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1550497868
 GameObject:
   m_ObjectHideFlags: 0
@@ -23996,6 +24236,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 4
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1563576369
 GameObject:
   m_ObjectHideFlags: 0
@@ -24379,6 +24623,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 1
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1637308495
 GameObject:
   m_ObjectHideFlags: 0
@@ -24694,6 +24942,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 5
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1666194027
 GameObject:
   m_ObjectHideFlags: 0
@@ -25009,6 +25261,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 1
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1688020362
 GameObject:
   m_ObjectHideFlags: 0
@@ -25324,6 +25580,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 2
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1706025312
 GameObject:
   m_ObjectHideFlags: 0
@@ -25639,6 +25899,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 5
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1710087913
 GameObject:
   m_ObjectHideFlags: 0
@@ -26072,6 +26336,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 5
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1773721768
 GameObject:
   m_ObjectHideFlags: 0
@@ -26387,6 +26655,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 4
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1788524970
 GameObject:
   m_ObjectHideFlags: 0
@@ -26702,6 +26974,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 5
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1795990398
 GameObject:
   m_ObjectHideFlags: 0
@@ -27017,6 +27293,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 2
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1814519397
 GameObject:
   m_ObjectHideFlags: 0
@@ -27332,6 +27612,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 5
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1818826847
 GameObject:
   m_ObjectHideFlags: 0
@@ -27647,6 +27931,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 2
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1826668011
 GameObject:
   m_ObjectHideFlags: 0
@@ -27962,6 +28250,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 0
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1838302667
 GameObject:
   m_ObjectHideFlags: 0
@@ -28277,6 +28569,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 8
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1879942534
 GameObject:
   m_ObjectHideFlags: 0
@@ -28592,6 +28888,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 7
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1001 &1960377702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28600,6 +28900,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 778720530}
     m_Modifications:
+    - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: Prototype.gridRef
+      value: 
+      objectReference: {fileID: 102758550}
     - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: Prototype.targetGrid
@@ -28620,6 +28925,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4690311513693018640, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8b37e156fd815834f949668dc1e0b6aa, type: 2}
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28719,7 +29029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ca3669bbdc3c643bc0f43e43c38bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  link: {fileID: 1960377708}
+  characterLink: {fileID: 0}
 --- !u!135 &1960377707
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28741,18 +29051,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1960377708 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1960377702}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960377705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12c76d7b1333f8c49ac37c7a3d819c1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1960625504
 GameObject:
   m_ObjectHideFlags: 0
@@ -29068,6 +29366,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 6
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1970676174
 GameObject:
   m_ObjectHideFlags: 0
@@ -29383,6 +29685,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 0
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &1991961471
 GameObject:
   m_ObjectHideFlags: 0
@@ -29698,6 +30004,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 6
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1 &2064486768
 GameObject:
   m_ObjectHideFlags: 0
@@ -30191,6 +30501,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     index: 8
+    isObstacle:
+      Value: 0
+    isCollectable:
+      Value: 0
 --- !u!1001 &7981800068143927248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30199,6 +30513,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 778720530}
     m_Modifications:
+    - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: Prototype.gridRef
+      value: 
+      objectReference: {fileID: 102758550}
     - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: Prototype.targetGrid
@@ -30224,6 +30543,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 4690311513693018640, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8b37e156fd815834f949668dc1e0b6aa, type: 2}
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30323,7 +30647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ca3669bbdc3c643bc0f43e43c38bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  link: {fileID: 7981800068143927254}
+  characterLink: {fileID: 0}
 --- !u!135 &7981800068143927253
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30345,18 +30669,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7981800068143927254 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
-    type: 3}
-  m_PrefabInstance: {fileID: 7981800068143927248}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7981800068143927251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12c76d7b1333f8c49ac37c7a3d819c1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

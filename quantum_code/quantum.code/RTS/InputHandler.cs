@@ -1,34 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static Quantum.RTS.CharacterMover;
+﻿using Quantum.RTS.Filters;
 
 namespace Quantum.RTS
 {
-    public unsafe class InputHandler : SystemMainThreadFilter<InputHandler.Filter>
+    public unsafe class InputHandler : SystemMainThreadFilter<CharacterFilter> 
     {
-        public override void Update(Frame f, ref Filter filter)
+        public override void Update(Frame f, ref CharacterFilter filter)
         {
             Input input = default;
-            input = *f.GetPlayerInput(filter.character->teamId);
-            if (input.character != EntityRef.None)
+
+            input = *f.GetPlayerInput(filter.characterLink->teamId);
+            if (input.character == filter.entity)
             {
                 if (input.selectedGrid != -1 && input.selectedGrid != -1)
                 {
-                    if (f.Unsafe.TryGetPointer(input.character, out CharacterLink* characterLink))
-                    {
-                        characterLink->targetLine = input.selectedLine;
-                        characterLink->targetGrid = input.selectedGrid;
-                    }
+                   
+                       filter.characterLink->targetLine = input.selectedLine;
+                       filter.characterLink->targetGrid = input.selectedGrid;
                 }
             }
-        }
-        public struct Filter
-        {
-            public EntityRef entity;
-            public CharacterLink* character;
         }
     }
 

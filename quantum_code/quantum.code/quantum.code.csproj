@@ -79,7 +79,10 @@
     <Compile Include="Frame.User.cs" />
     <Compile Include="FrameContext.User.cs" />
     <Compile Include="RTS\CharacterMover.cs" />
+    <Compile Include="RTS\Filters\CharacterFilter.cs" />
+    <Compile Include="RTS\Filters\GridFilter.cs" />
     <Compile Include="RTS\InputHandler.cs" />
+    <Compile Include="RTS\PathFinding\PathFinder.cs" />
     <Compile Include="RuntimeConfig.User.cs" />
     <Compile Include="RuntimePlayer.User.cs" />
     <Compile Include="SimulationConfig.User.cs" />

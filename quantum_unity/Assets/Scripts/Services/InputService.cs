@@ -19,7 +19,7 @@ public class InputService : IService
     public void OnGridSelected(object sender, GridEntity grid)
     {
         if(_selectedCharacter != null) {
-            var selectedCharacterPrototype = _selectedCharacter.link.Prototype;
+            var selectedCharacterPrototype = _selectedCharacter.characterLink.Prototype;
             if (selectedCharacterPrototype.targetLine != -1 || selectedCharacterPrototype.targetGrid != -1)
             {
                 _selectedCharacter = null;
@@ -40,7 +40,7 @@ public class InputService : IService
 
     public void OnCharacterSelected(object sender, Character character)
     {
-        var prototype = character.link.Prototype;
+        var prototype = character.characterLink.Prototype;
         if (prototype.targetLine != -1 && prototype.targetGrid != -1)
         {
             Debug.Log("Character Can Not Be Selected Since Its Moving.");
