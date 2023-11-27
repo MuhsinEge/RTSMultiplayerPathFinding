@@ -9,7 +9,7 @@ public class LocalInput : MonoBehaviour
 {
     InputService _inputService;
     PlayerCommandData _commandData;
-    public bool sendInput = false;
+    bool sendInput = false;
 
     private void Awake()
     {
@@ -35,8 +35,8 @@ public class LocalInput : MonoBehaviour
         Quantum.Input input = new Quantum.Input
         {
             character = _commandData.entity,
-            selectedGrid = _commandData.grid.gridIndex,
-            selectedLine = _commandData.grid.gridLine,
+            selectedLine = _commandData.grid.Prototype.line,
+            selectedGrid = _commandData.grid.Prototype.index,
         };
         callback.SetInput(input, DeterministicInputFlags.Repeatable);
         sendInput = false;

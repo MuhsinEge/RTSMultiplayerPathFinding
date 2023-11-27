@@ -15,35 +15,57 @@ namespace Quantum.RTS
             var characters = f.Unsafe.FilterStruct<CharacterFilter>();
             var characterStruct = default(CharacterFilter);
 
-          //  Log.Debug("Girdi 1");
             if (grid.Next(&gridStruct))
             {
-               // Log.Debug("Girdi 2");
                 while (characters.Next(&characterStruct))
                 {
-                   // Log.Debug("Girdi 3");
                     if (characterStruct.characterLink->targetLine == -1 || characterStruct.characterLink->targetGrid == -1)
                     {
                         continue;
                     }
-                    PathFinder.FindPath(f, gridStruct.gridData, 0, 8, characterStruct.characterLink->targetLine, characterStruct.characterLink->targetGrid);
-                    if (f.Unsafe.TryGetPointer(characterStruct.entity, out Transform3D* transform))
+                    var currentGrid = characterStruct.characterLink->currentGridRef;
+                    if(f.Unsafe.TryGetPointer(currentGrid,out Grid* currentGridData))
                     {
-                        var targetGrid = gridStruct.gridData->gridLayout[characterStruct.characterLink->targetLine].grids[characterStruct.characterLink->targetGrid];
-                        if (f.Unsafe.TryGetPointer(targetGrid, out Transform3D* targetGridTransform))
+                        if (f.Unsafe.TryGetPointer(characterStruct.entity, out Transform3D* transform))
                         {
-                            var targetPosition = new FPVector3(targetGridTransform->Position.X, transform->Position.Y, targetGridTransform->Position.Z);
-                            var distance = FPVector3.Distance(transform->Position, targetPosition);
-                            if (distance < FP._0_03)
+                            var path = PathFinder.FindPath(f, gridStruct.gridData, currentGridData->line, currentGridData->index, characterStruct.characterLink->targetLine, characterStruct.characterLink->targetGrid);
+                            if (path == null)
                             {
                                 characterStruct.characterLink->targetLine = -1;
                                 characterStruct.characterLink->targetGrid = -1;
-                                transform->Position = targetPosition;
-                                continue;
+                                if (f.Unsafe.TryGetPointer(characterStruct.characterLink->currentGridRef, out Transform3D* currentGridTransform))
+                                {
+                                    transform->Position = currentGridTransform->Position;
+                                }
                             }
-                            var direction = targetPosition - transform->Position;
-                            direction = direction.Normalized;
-                            transform->Position += direction / f.UpdateRate * FP._3;
+                            else
+                            {
+                                var targetGrid = path[1];
+                                if (f.Unsafe.TryGetPointer(targetGrid, out Transform3D* targetGridTransform))
+                                {
+                                    var targetPosition = new FPVector3(targetGridTransform->Position.X, transform->Position.Y, targetGridTransform->Position.Z);
+                                    var distance = FPVector3.Distance(transform->Position, targetPosition);
+                                    if (distance < FP._0_03)
+                                    {
+                                        if (path.Count == 2 && path[0] == characterStruct.characterLink->currentGridRef)
+                                        {
+                                            characterStruct.characterLink->targetLine = -1;
+                                            characterStruct.characterLink->targetGrid = -1;
+                                        }
+                                        currentGridData->isObstacle = false;
+                                        if (f.Unsafe.TryGetPointer(targetGrid, out Grid* targetGridData))
+                                        {
+                                            targetGridData->isObstacle = true;
+                                        }
+                                        characterStruct.characterLink->currentGridRef = targetGrid;
+                                        transform->Position = targetPosition;
+                                        continue;
+                                    }
+                                    var direction = targetPosition - transform->Position;
+                                    direction = direction.Normalized;
+                                    transform->Position += direction / f.UpdateRate * FP._3;
+                                }
+                            }
                         }
                     }
                 }

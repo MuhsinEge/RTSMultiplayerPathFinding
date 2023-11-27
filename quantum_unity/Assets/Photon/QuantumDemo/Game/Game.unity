@@ -402,8 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &14055076
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -438,6 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 3
     index: 0
     isObstacle:
       Value: 0
@@ -721,8 +721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &47844723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -757,6 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 3
     index: 3
     isObstacle:
       Value: 1
@@ -785,6 +785,11 @@ PrefabInstance:
       propertyPath: Prototype.targetLine
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: Prototype.currentGridRef
+      value: 
+      objectReference: {fileID: 1194522655}
     - target: {fileID: 4503472163656873040, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_Name
@@ -798,7 +803,7 @@ PrefabInstance:
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
@@ -808,7 +813,7 @@ PrefabInstance:
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
@@ -1194,8 +1199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &58682326
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1230,6 +1234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 1
     index: 4
     isObstacle:
       Value: 1
@@ -1635,8 +1640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &93647550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1650,6 +1654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 3
     index: 8
     isObstacle:
       Value: 0
@@ -1954,8 +1959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &96838325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1969,6 +1973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 6
     index: 7
     isObstacle:
       Value: 0
@@ -2273,8 +2278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &99897194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2288,6 +2292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 7
     index: 3
     isObstacle:
       Value: 0
@@ -3000,8 +3005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &127225472
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3036,6 +3040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 2
     index: 3
     isObstacle:
       Value: 1
@@ -3319,8 +3324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &144496695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3355,6 +3359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 3
     index: 5
     isObstacle:
       Value: 0
@@ -3659,8 +3664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &171284636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3674,6 +3678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 8
     index: 5
     isObstacle:
       Value: 0
@@ -3723,7 +3728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d80a0dde3922e0f47b2e12ce66a4cfdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sendInput: 0
 --- !u!1 &237504400
 GameObject:
   m_ObjectHideFlags: 0
@@ -4002,8 +4006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &237504407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4038,6 +4041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 6
     index: 6
     isObstacle:
       Value: 0
@@ -4321,8 +4325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &251435018
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4357,6 +4360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 0
     index: 3
     isObstacle:
       Value: 0
@@ -4640,8 +4644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &256347819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4676,6 +4679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 4
     index: 6
     isObstacle:
       Value: 0
@@ -4754,6 +4758,11 @@ PrefabInstance:
       propertyPath: Prototype.playerIndex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: Prototype.currentGridRef
+      value: 
+      objectReference: {fileID: 331530665}
     - target: {fileID: 4503472163656873040, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_Name
@@ -5184,8 +5193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &331530669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5199,9 +5207,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 8
     index: 0
     isObstacle:
-      Value: 0
+      Value: 1
     isCollectable:
       Value: 0
 --- !u!1 &348310621
@@ -5482,8 +5491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &348310628
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5518,6 +5526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 0
     index: 2
     isObstacle:
       Value: 0
@@ -5801,8 +5810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &359558954
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5837,6 +5845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 5
     index: 3
     isObstacle:
       Value: 0
@@ -6141,8 +6150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &366486523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6156,6 +6164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 6
     index: 8
     isObstacle:
       Value: 0
@@ -6460,8 +6469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &373823550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6475,9 +6483,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 8
     index: 8
     isObstacle:
-      Value: 0
+      Value: 1
     isCollectable:
       Value: 0
 --- !u!1 &387022201
@@ -6779,8 +6788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &387022209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6794,6 +6802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 7
     index: 2
     isObstacle:
       Value: 0
@@ -7163,6 +7172,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456887264927910, guid: 9e5addbaa78b7264889bf147e593db91,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -24.000122
       objectReference: {fileID: 0}
     - target: {fileID: 224468478025480174, guid: 9e5addbaa78b7264889bf147e593db91,
         type: 3}
@@ -7708,6 +7722,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -130
+      objectReference: {fileID: 0}
+    - target: {fileID: 224898763699037404, guid: 9e5addbaa78b7264889bf147e593db91,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -24.000122
       objectReference: {fileID: 0}
     - target: {fileID: 224984888091992450, guid: 9e5addbaa78b7264889bf147e593db91,
         type: 3}
@@ -9373,8 +9392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &415823984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9388,6 +9406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 7
     index: 4
     isObstacle:
       Value: 0
@@ -9692,8 +9711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &444674273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9707,6 +9725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 5
     index: 7
     isObstacle:
       Value: 0
@@ -10011,8 +10030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &451125877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10026,6 +10044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 8
     index: 1
     isObstacle:
       Value: 0
@@ -10370,8 +10389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &516289193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10385,6 +10403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 1
     index: 7
     isObstacle:
       Value: 0
@@ -10668,8 +10687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &532947431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10704,6 +10722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 3
     index: 6
     isObstacle:
       Value: 0
@@ -10987,8 +11006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &635132232
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11023,6 +11041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 1
     index: 2
     isObstacle:
       Value: 0
@@ -11306,8 +11325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &655270746
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11342,6 +11360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 6
     index: 1
     isObstacle:
       Value: 0
@@ -11625,8 +11644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &668980694
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11661,6 +11679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 5
     index: 0
     isObstacle:
       Value: 0
@@ -11944,8 +11963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &695237255
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11980,9 +11998,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 0
     index: 0
     isObstacle:
-      Value: 0
+      Value: 1
     isCollectable:
       Value: 0
 --- !u!1 &706910042
@@ -12284,8 +12303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &706910050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12299,6 +12317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 7
     index: 1
     isObstacle:
       Value: 0
@@ -12582,8 +12601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &755159596
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12618,6 +12636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 6
     index: 5
     isObstacle:
       Value: 0
@@ -12901,8 +12920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &765938964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12937,6 +12955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 4
     index: 1
     isObstacle:
       Value: 0
@@ -13275,8 +13294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &784610738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13290,6 +13308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 1
     index: 8
     isObstacle:
       Value: 0
@@ -13573,8 +13592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &820688859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13609,6 +13627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 2
     index: 0
     isObstacle:
       Value: 0
@@ -13892,8 +13911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &840925665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13928,6 +13946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 4
     index: 3
     isObstacle:
       Value: 1
@@ -14211,8 +14230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &849652691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14247,6 +14265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 1
     index: 3
     isObstacle:
       Value: 1
@@ -14530,8 +14549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &860971348
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14566,6 +14584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 5
     index: 6
     isObstacle:
       Value: 0
@@ -14883,8 +14902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &898600842
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14919,6 +14937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 4
     index: 4
     isObstacle:
       Value: 0
@@ -15202,8 +15221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &956166351
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15238,6 +15256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 2
     index: 2
     isObstacle:
       Value: 0
@@ -15542,8 +15561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &957697196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15557,6 +15575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 4
     index: 8
     isObstacle:
       Value: 0
@@ -15886,8 +15905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &997389228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15922,6 +15940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 2
     index: 1
     isObstacle:
       Value: 0
@@ -16226,8 +16245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1018457183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16241,6 +16259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 8
     index: 2
     isObstacle:
       Value: 0
@@ -16545,8 +16564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1025981634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16560,9 +16578,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 0
     index: 8
     isObstacle:
-      Value: 0
+      Value: 1
     isCollectable:
       Value: 0
 --- !u!1 &1028141769
@@ -16904,8 +16923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1034335406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16919,6 +16937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 8
     index: 7
     isObstacle:
       Value: 0
@@ -16952,6 +16971,11 @@ PrefabInstance:
       propertyPath: Prototype.targetLine
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: Prototype.currentGridRef
+      value: 
+      objectReference: {fileID: 1550497872}
     - target: {fileID: 4503472163656873040, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_Name
@@ -16965,7 +16989,7 @@ PrefabInstance:
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
@@ -17441,8 +17465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1128001769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17477,6 +17500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 3
     index: 1
     isObstacle:
       Value: 0
@@ -17781,8 +17805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1140842031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17796,6 +17819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 7
     index: 5
     isObstacle:
       Value: 0
@@ -18079,8 +18103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1147151560
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18115,6 +18138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 0
     index: 1
     isObstacle:
       Value: 0
@@ -18398,8 +18422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1194522659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18434,9 +18457,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 0
     index: 4
     isObstacle:
-      Value: 0
+      Value: 1
     isCollectable:
       Value: 0
 --- !u!1 &1242368506
@@ -18717,8 +18741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1242368513
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18753,6 +18776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 1
     index: 6
     isObstacle:
       Value: 0
@@ -19057,8 +19081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1250657296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19072,6 +19095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 0
     index: 7
     isObstacle:
       Value: 0
@@ -19355,8 +19379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1260348158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19391,6 +19414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 6
     index: 0
     isObstacle:
       Value: 0
@@ -19674,8 +19698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1310930395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19710,6 +19733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 0
     index: 6
     isObstacle:
       Value: 0
@@ -20033,8 +20057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1323309288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20069,6 +20092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 5
     index: 2
     isObstacle:
       Value: 0
@@ -20352,8 +20376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1344589996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20388,6 +20411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 6
     index: 3
     isObstacle:
       Value: 0
@@ -20671,8 +20695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1362069079
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20707,6 +20730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 5
     index: 4
     isObstacle:
       Value: 0
@@ -20745,6 +20769,11 @@ PrefabInstance:
       propertyPath: Prototype.playerIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: Prototype.currentGridRef
+      value: 
+      objectReference: {fileID: 373823546}
     - target: {fileID: 4503472163656873040, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_Name
@@ -20758,7 +20787,7 @@ PrefabInstance:
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
@@ -20768,7 +20797,7 @@ PrefabInstance:
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
@@ -21175,8 +21204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1367842388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21190,6 +21218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 2
     index: 8
     isObstacle:
       Value: 0
@@ -21668,8 +21697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1424041195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21683,6 +21711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 8
     index: 3
     isObstacle:
       Value: 0
@@ -21987,8 +22016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1443350367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22002,6 +22030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 8
     index: 6
     isObstacle:
       Value: 0
@@ -22285,8 +22314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1494399894
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22321,6 +22349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 6
     index: 4
     isObstacle:
       Value: 0
@@ -22604,8 +22633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1498110209
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22640,6 +22668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 2
     index: 4
     isObstacle:
       Value: 0
@@ -22944,8 +22973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1507905459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22959,6 +22987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 2
     index: 7
     isObstacle:
       Value: 0
@@ -23263,8 +23292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1529614514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23278,6 +23306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 4
     index: 7
     isObstacle:
       Value: 0
@@ -23582,8 +23611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1541964050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23597,6 +23625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 3
     index: 7
     isObstacle:
       Value: 0
@@ -23880,8 +23909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1546107990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23916,6 +23944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 4
     index: 0
     isObstacle:
       Value: 0
@@ -24220,8 +24249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1550497876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24235,9 +24263,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 8
     index: 4
     isObstacle:
-      Value: 0
+      Value: 1
     isCollectable:
       Value: 0
 --- !u!1 &1563576369
@@ -24586,8 +24615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1568833325
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24622,6 +24650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 1
     index: 1
     isObstacle:
       Value: 0
@@ -24905,8 +24934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1637308502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24941,6 +24969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 5
     index: 5
     isObstacle:
       Value: 0
@@ -25224,8 +25253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1666194034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25260,6 +25288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 5
     index: 1
     isObstacle:
       Value: 0
@@ -25543,8 +25572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1688020369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25579,6 +25607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 4
     index: 2
     isObstacle:
       Value: 0
@@ -25862,8 +25891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1706025319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25898,6 +25926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 0
     index: 5
     isObstacle:
       Value: 0
@@ -26299,8 +26328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1716401356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26335,6 +26363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 1
     index: 5
     isObstacle:
       Value: 0
@@ -26618,8 +26647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1773721775
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26654,6 +26682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 3
     index: 4
     isObstacle:
       Value: 0
@@ -26937,8 +26966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1788524977
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26973,6 +27001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 2
     index: 5
     isObstacle:
       Value: 0
@@ -27256,8 +27285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1795990405
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27292,6 +27320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 6
     index: 2
     isObstacle:
       Value: 0
@@ -27575,8 +27604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1814519404
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27611,6 +27639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 4
     index: 5
     isObstacle:
       Value: 0
@@ -27894,8 +27923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1818826854
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27930,6 +27958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 3
     index: 2
     isObstacle:
       Value: 0
@@ -28213,8 +28242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1826668018
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28249,6 +28277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 1
     index: 0
     isObstacle:
       Value: 0
@@ -28553,8 +28582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1838302675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28568,6 +28596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 5
     index: 8
     isObstacle:
       Value: 0
@@ -28872,8 +28901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1879942542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28887,6 +28915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 7
     index: 7
     isObstacle:
       Value: 0
@@ -28920,6 +28949,11 @@ PrefabInstance:
       propertyPath: Prototype.playerIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: Prototype.currentGridRef
+      value: 
+      objectReference: {fileID: 1025981630}
     - target: {fileID: 4503472163656873040, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_Name
@@ -28933,7 +28967,7 @@ PrefabInstance:
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
@@ -29350,8 +29384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1960625512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29365,6 +29398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 7
     index: 6
     isObstacle:
       Value: 0
@@ -29669,8 +29703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &1970676182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29684,6 +29717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 7
     index: 0
     isObstacle:
       Value: 0
@@ -29967,8 +30001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!65 &1991961478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30003,6 +30036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 2
     index: 6
     isObstacle:
       Value: 0
@@ -30485,8 +30519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e12e8270c6733fa4db4aa03f031e1466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridLine: 0
-  gridIndex: 0
+  _gridData: {fileID: 0}
 --- !u!114 &2098734268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30500,6 +30533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prototype:
+    line: 7
     index: 8
     isObstacle:
       Value: 0
@@ -30533,6 +30567,11 @@ PrefabInstance:
       propertyPath: Prototype.playerIndex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1128961798384811514, guid: 0560aa72e87630d4fb12e47db03f1b3e,
+        type: 3}
+      propertyPath: Prototype.currentGridRef
+      value: 
+      objectReference: {fileID: 695237251}
     - target: {fileID: 3939200774710484644, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: GameObjectNameIsEntityRef
@@ -30551,7 +30590,7 @@ PrefabInstance:
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 5532094002841559720, guid: 0560aa72e87630d4fb12e47db03f1b3e,
         type: 3}

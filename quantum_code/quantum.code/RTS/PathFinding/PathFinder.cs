@@ -12,6 +12,8 @@ namespace Quantum.RTS.PathFinding
         {
             var nodes = ConvertGridToNode(f, grid);
             var calculatedPath = CalculatePath(nodes, nodes[startLine, startIndex], nodes[targetLine, targetIndex]);
+            if (calculatedPath == null) return null;
+
             List<EntityRef> result = new List<EntityRef>();
             foreach (var node in calculatedPath)
             {
@@ -82,20 +84,8 @@ namespace Quantum.RTS.PathFinding
             int y = node.Y;
 
             // Check and add valid neighbors
-            if (x > 0)
-            {
-                yield return grid[x - 1, y]; // Left
-                if (y > 0) yield return grid[x - 1, y - 1]; // Top Left
-                if (y < maxY - 1) yield return grid[x - 1, y + 1]; // Bottom Left
-            }
-
-            if (x < maxX - 1)
-            {
-                yield return grid[x + 1, y]; // Right
-                if (y > 0) yield return grid[x + 1, y - 1]; // Top Right
-                if (y < maxY - 1) yield return grid[x + 1, y + 1]; // Bottom Right
-            }
-
+            if (x > 0) yield return grid[x - 1, y]; // Left
+            if (x < maxX - 1) yield return grid[x + 1, y]; // Right
             if (y > 0) yield return grid[x, y - 1]; // Top
             if (y < maxY - 1) yield return grid[x, y + 1]; // Bottom
         }

@@ -10,6 +10,6 @@ namespace Assets.Scripts.Data
     public struct PlayerCommandData
     {
         public EntityRef entity;
-        public GridEntity grid;
+        public EntityComponentGrid grid;
     }
 }

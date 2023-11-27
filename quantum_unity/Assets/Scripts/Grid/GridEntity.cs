@@ -8,14 +8,12 @@ using UnityEngine.EventSystems;
 public class GridEntity : MonoBehaviour, IPointerDownHandler
 {
     GridInputService _gridInputService;
-    private EntityComponentGrid _gridData;
-    [HideInInspector] public int gridLine;
-    [HideInInspector] public int gridIndex;
+    public EntityComponentGrid _gridData;
     public void Initialize(GridInputService gridInputService, int gridLine, int gridIndex)
     {
-        this.gridLine = gridLine;
-        this.gridIndex = gridIndex;
         _gridData = GetComponent<EntityComponentGrid>();
+        _gridData.Prototype.line = gridLine;
+        _gridData.Prototype.index = gridIndex;
         if (_gridData.Prototype.isObstacle)
         {
             GetComponent<MeshRenderer>().material.color = Color.blue;
@@ -25,6 +23,6 @@ public class GridEntity : MonoBehaviour, IPointerDownHandler
     }
     public void OnPointerDown(PointerEventData eventData)
     {
-        _gridInputService.GridSelected(this);
+        _gridInputService.GridSelected(_gridData);
     }
 }

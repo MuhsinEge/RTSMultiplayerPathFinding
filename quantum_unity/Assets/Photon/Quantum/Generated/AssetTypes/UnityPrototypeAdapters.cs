@@ -6,6 +6,26 @@
 using System;
 namespace Quantum.Prototypes.Unity {
   [System.SerializableAttribute()]
+  [Quantum.Prototypes.PrototypeAttribute(typeof(Quantum.CharacterLink))]
+  public class CharacterLink_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.CharacterLink_Prototype> {
+    public System.Int32 teamId;
+    public System.Int32 playerIndex;
+    public System.Int32 targetLine;
+    public System.Int32 targetGrid;
+    [Quantum.LocalReference]
+    public global::EntityPrototype currentGridRef;
+
+    public sealed override Quantum.Prototypes.CharacterLink_Prototype Convert(EntityPrototypeConverter converter) {
+      var result = new Quantum.Prototypes.CharacterLink_Prototype();
+      result.teamId = this.teamId;
+      result.playerIndex = this.playerIndex;
+      result.targetLine = this.targetLine;
+      result.targetGrid = this.targetGrid;
+      converter.Convert(this.currentGridRef, out result.currentGridRef);
+      return result;
+    }
+  }
+  [System.SerializableAttribute()]
   [Quantum.Prototypes.PrototypeAttribute(typeof(Quantum.GridDataLink))]
   public class GridDataLink_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.GridDataLink_Prototype> {
     [Quantum.Inspector.ArrayLengthAttribute((Int32)9)]

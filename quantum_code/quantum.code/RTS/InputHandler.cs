@@ -11,11 +11,12 @@ namespace Quantum.RTS
             input = *f.GetPlayerInput(filter.characterLink->teamId);
             if (input.character == filter.entity)
             {
+                Log.Debug("Girdi2");
                 if (input.selectedGrid != -1 && input.selectedGrid != -1)
                 {
-                   
-                       filter.characterLink->targetLine = input.selectedLine;
-                       filter.characterLink->targetGrid = input.selectedGrid;
+                    Log.Debug("Girdi3");
+                    filter.characterLink->targetLine = input.selectedLine;
+                    filter.characterLink->targetGrid = input.selectedGrid;
                 }
             }
         }

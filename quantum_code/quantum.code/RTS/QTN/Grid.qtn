@@ -1,4 +1,5 @@
 component Grid{
+	int line;
 	int index;
 	bool isObstacle;
 	bool isCollectable;

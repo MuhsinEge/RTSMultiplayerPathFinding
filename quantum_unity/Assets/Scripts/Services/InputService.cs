@@ -16,7 +16,7 @@ public class InputService : IService
         _characterInputService.onCharacterSelected += OnCharacterSelected;
     }
 
-    public void OnGridSelected(object sender, GridEntity grid)
+    public void OnGridSelected(object sender, EntityComponentGrid grid)
     {
         if(_selectedCharacter != null) {
             var selectedCharacterPrototype = _selectedCharacter.characterLink.Prototype;
