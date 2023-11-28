@@ -5557,7 +5557,7 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
-      Value: 0
+      Value: 1
     isOccupied:
       Value: 0
 --- !u!1 &359558947
@@ -18231,7 +18231,7 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
-      Value: 0
+      Value: 1
     isOccupied:
       Value: 0
 --- !u!1 &1194522652

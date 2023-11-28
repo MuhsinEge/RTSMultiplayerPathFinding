@@ -9,9 +9,13 @@ public class GridEntity : MonoBehaviour, IPointerDownHandler
 {
     GridInputService _gridInputService;
     [HideInInspector]public EntityComponentGrid _gridData;
+    private Color _initialColor;
+    private MeshRenderer _renderer;
     public void Initialize(GridInputService gridInputService, int gridLine, int gridIndex)
     {
         _gridData = GetComponent<EntityComponentGrid>();
+        _renderer = GetComponent<MeshRenderer>();
+        _initialColor = _renderer.material.color;
         _gridData.Prototype.line = gridLine;
         _gridData.Prototype.index = gridIndex;
         _gridInputService = gridInputService;
@@ -24,12 +28,20 @@ public class GridEntity : MonoBehaviour, IPointerDownHandler
 
     public void UpdateView()
     {
+        
         if (_gridData.Prototype.isObstacle)
         {
-            GetComponent<MeshRenderer>().material.color = Color.blue;
+            _renderer.material.color = Color.blue;
         }else if (_gridData.Prototype.isCollectable)
         {
-            GetComponent<MeshRenderer>().material.color = Color.yellow;
+            _renderer.material.color = Color.green;
+        }else if(_gridData.Prototype.isOccupied)
+        {
+            _renderer.material.color = Color.grey;
+        }
+        else
+        {
+            _renderer.material.color = _initialColor;
         }
     }
 }

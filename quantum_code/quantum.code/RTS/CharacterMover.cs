@@ -2,14 +2,14 @@
 using Quantum.RTS.Filters;
 using Quantum.RTS.PathFinding;
 using System.Collections.Generic;
-using System.IO;
+using static Quantum.RTS.InputHandler;
 
 namespace Quantum.RTS
 {
     public unsafe class CharacterMover : SystemMainThread
     {
-
-        private bool ShouldSkipCharacterMovement(CharacterFilter characterStruct) {
+        private bool ShouldSkipCharacterMovement(CharacterFilter characterStruct)
+        {
 
             if (characterStruct.characterLink->targetLine == -1 || characterStruct.characterLink->targetGrid == -1)
             {
@@ -18,7 +18,7 @@ namespace Quantum.RTS
             return false;
         }
 
-        public void HandlePathFinding(Frame f,GridFilter gridStruct, CharacterFilter characterStruct)
+        public void HandlePathFinding(Frame f, GridFilter gridStruct, CharacterFilter characterStruct)
         {
             var currentGrid = characterStruct.characterLink->currentGridRef;
             if (f.Unsafe.TryGetPointer(currentGrid, out Grid* currentGridData))
@@ -26,13 +26,13 @@ namespace Quantum.RTS
                 if (f.Unsafe.TryGetPointer(characterStruct.entity, out Transform3D* characterTransform))
                 {
                     var path = PathFinder.FindPath(f, gridStruct.gridData, currentGridData->line, currentGridData->index, characterStruct.characterLink->targetLine, characterStruct.characterLink->targetGrid);
-                    if (path == null)
+                    if (path == null || path.Count <= 1)
                     {
                         HandleNoPathFound(f, characterStruct, characterTransform);
                     }
                     else
                     {
-                        HandlePathFound(f,characterStruct,characterTransform,path,currentGridData);
+                        HandlePathFound(f, characterStruct, characterTransform, path, currentGridData);
                     }
                 }
             }
@@ -48,7 +48,7 @@ namespace Quantum.RTS
             }
         }
 
-        private void HandlePathFound(Frame f,CharacterFilter characterStruct, Transform3D* characterTransform, List<EntityRef> path, Grid* currentGridData)
+        private void HandlePathFound(Frame f, CharacterFilter characterStruct, Transform3D* characterTransform, List<EntityRef> path, Grid* currentGridData)
         {
             var targetGrid = path[1];
             if (f.Unsafe.TryGetPointer(targetGrid, out Transform3D* targetGridTransform))
@@ -57,13 +57,13 @@ namespace Quantum.RTS
                 var distance = FPVector3.Distance(characterTransform->Position, targetPosition);
                 if (distance < FP._0_03)
                 {
-                    HandleDestinationReached(f,targetPosition,characterStruct,characterTransform,path,targetGrid,currentGridData);
+                    HandleDestinationReached(f, targetPosition, characterStruct, characterTransform, path, targetGrid, currentGridData);
                 }
                 else
                 {
-                    MoveCharacter(f,characterTransform, targetPosition, distance);
+                    MoveCharacter(f, characterTransform, targetPosition, distance);
                 }
-               
+
             }
         }
 
@@ -75,18 +75,18 @@ namespace Quantum.RTS
                 characterStruct.characterLink->targetGrid = -1;
             }
             currentGridData->isOccupied = false;
-            f.Events.GridDataEvent(currentGridData->line, currentGridData->index);
+            f.Events.GridOccupyEvent(currentGridData->line, currentGridData->index, false);
 
             if (f.Unsafe.TryGetPointer(targetGrid, out Grid* targetGridData))
             {
                 targetGridData->isOccupied = true;
-                f.Events.GridDataEvent(targetGridData->line, targetGridData->index);
+                f.Events.GridOccupyEvent(targetGridData->line, targetGridData->index,true);
             }
             characterStruct.characterLink->currentGridRef = targetGrid;
             characterTransform->Position = targetPosition;
         }
 
-        private void MoveCharacter(Frame f,Transform3D* characterTransform, FPVector3 targetPosition, FP distance)
+        private void MoveCharacter(Frame f, Transform3D* characterTransform, FPVector3 targetPosition, FP distance)
         {
             var direction = targetPosition - characterTransform->Position;
             direction = direction.Normalized;
@@ -109,7 +109,7 @@ namespace Quantum.RTS
                     {
                         continue;
                     }
-                    HandlePathFinding(f,gridStruct,characterStruct);
+                    HandlePathFinding(f, gridStruct, characterStruct);
                 }
             }
         }

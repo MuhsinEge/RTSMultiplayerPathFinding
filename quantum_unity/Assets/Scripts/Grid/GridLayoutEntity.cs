@@ -19,11 +19,11 @@ public class GridLayoutEntity : MonoBehaviour
 
     private void Start()
     {
-        QuantumEvent.Subscribe<EventGridDataEvent>(this, OnGridDataChangedEventHandler);
+        QuantumEvent.Subscribe<EventGridOccupyEvent>(this, OnGridDataChangedEventHandler);
     }
 
-    private void OnGridDataChangedEventHandler(EventGridDataEvent e)
+    private void OnGridDataChangedEventHandler(EventGridOccupyEvent e)
     {
-        grids[e.line].InformDataChanged(e.index);
+        grids[e.line].InformDataChanged(e.index, e.occupied);
     }
 }

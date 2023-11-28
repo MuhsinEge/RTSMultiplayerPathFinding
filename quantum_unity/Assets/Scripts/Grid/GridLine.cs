@@ -18,8 +18,10 @@ public class GridLine
         }
     }
 
-    public void InformDataChanged(int index)
+    public void InformDataChanged(int index, bool isOccupied)
     {
-        line[index].UpdateView();
+        var grid = line[index];
+        grid._gridData.Prototype.isOccupied = isOccupied;
+        grid.UpdateView();
     }
 }
