@@ -32,7 +32,7 @@ namespace Quantum.RTS.PathFinding
                 {
                     if (f.Unsafe.TryGetPointer(grid->gridLayout[i].grids[j], out Grid* g)) {
 
-                        nodes[i, j] = new Node(i, j, !g->isObstacle);
+                        nodes[i, j] = new Node(i, j, !g->isObstacle && !g->isOccupied);
                     }
                 }
             }

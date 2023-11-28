@@ -17,4 +17,9 @@ public class GridLine
             counter++;
         }
     }
+
+    public void InformDataChanged(int index)
+    {
+        line[index].UpdateView();
+    }
 }

@@ -164,6 +164,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -241,6 +243,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -317,6 +321,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -395,6 +401,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -471,6 +479,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -549,6 +559,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -625,6 +637,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -703,6 +717,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -779,6 +795,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -857,6 +875,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -934,6 +954,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -1010,6 +1032,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -1088,6 +1112,8 @@ MonoBehaviour:
         Value: 1
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -1165,6 +1191,8 @@ MonoBehaviour:
         Value: 1
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -1241,6 +1269,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -1319,6 +1349,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -1395,6 +1427,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -1473,6 +1507,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -1549,6 +1585,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -1627,6 +1665,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -1703,6 +1743,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -1781,6 +1823,8 @@ MonoBehaviour:
         Value: 1
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -1857,6 +1901,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -1935,6 +1981,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -2011,6 +2059,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -2089,6 +2139,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -2165,6 +2217,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -2243,6 +2297,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -2320,6 +2376,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -2396,6 +2454,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -2474,6 +2534,8 @@ MonoBehaviour:
         Value: 1
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -2550,6 +2612,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -2628,6 +2692,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -2704,6 +2770,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -2782,6 +2850,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -2858,6 +2928,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -2936,6 +3008,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -3013,6 +3087,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -3089,6 +3165,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -3167,6 +3245,8 @@ MonoBehaviour:
         Value: 1
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -3243,6 +3323,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -3321,6 +3403,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -3397,6 +3481,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -3475,6 +3561,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -3551,6 +3639,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -3629,6 +3719,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -3705,6 +3797,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -3783,6 +3877,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -3859,6 +3955,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -3937,6 +4035,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -4013,6 +4113,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -4091,6 +4193,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -4168,6 +4272,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -4244,6 +4350,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -4322,6 +4430,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -4398,6 +4508,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -4476,6 +4588,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -4552,6 +4666,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -4630,6 +4746,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -4706,6 +4824,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -4784,6 +4904,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -4861,6 +4983,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -4937,6 +5061,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -5015,6 +5141,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -5091,6 +5219,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -5169,6 +5299,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -5245,6 +5377,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -5323,6 +5457,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -5399,6 +5535,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -5477,6 +5615,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -5554,6 +5694,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -5630,6 +5772,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -5708,6 +5852,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -5784,6 +5930,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -5862,6 +6010,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -5938,6 +6088,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -6016,6 +6168,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -6092,6 +6246,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []
@@ -6170,6 +6326,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -6247,6 +6405,8 @@ MonoBehaviour:
         Value: 0
       isCollectable:
         Value: 0
+      isOccupied:
+        Value: 0
     GridDataLink: []
     CharacterController2D: []
     CharacterController3D: []
@@ -6323,6 +6483,8 @@ MonoBehaviour:
       isObstacle:
         Value: 0
       isCollectable:
+        Value: 0
+      isOccupied:
         Value: 0
     GridDataLink: []
     CharacterController2D: []

@@ -3,4 +3,5 @@ component Grid{
 	int index;
 	bool isObstacle;
 	bool isCollectable;
+	bool isOccupied;
 }

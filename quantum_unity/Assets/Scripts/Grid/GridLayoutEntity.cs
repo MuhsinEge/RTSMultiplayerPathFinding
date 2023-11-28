@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using ServiceLocator;
-public class GridLayoutEntity : MonoBehaviour
+using Quantum;
+
+public class GridLayoutEntity : MonoBehaviour 
 {
     public GridLine[] grids;
     private void Awake()
@@ -13,5 +15,15 @@ public class GridLayoutEntity : MonoBehaviour
             line.InitializeGrids(gridInputService, counter);
             counter++;
         }
+    }
+
+    private void Start()
+    {
+        QuantumEvent.Subscribe<EventGridDataEvent>(this, OnGridDataChangedEventHandler);
+    }
+
+    private void OnGridDataChangedEventHandler(EventGridDataEvent e)
+    {
+        grids[e.line].InformDataChanged(e.index);
     }
 }

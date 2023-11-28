@@ -443,6 +443,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &47844716
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,6 +763,8 @@ MonoBehaviour:
     isObstacle:
       Value: 1
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1001 &54968527
 PrefabInstance:
@@ -1240,6 +1244,8 @@ MonoBehaviour:
       Value: 1
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &90932518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1660,6 +1666,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &96838317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,6 +1987,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &99897186
 GameObject:
   m_ObjectHideFlags: 0
@@ -2297,6 +2307,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &102758548
 GameObject:
@@ -3046,6 +3058,8 @@ MonoBehaviour:
       Value: 1
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &144496688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3365,6 +3379,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &171284628
 GameObject:
   m_ObjectHideFlags: 0
@@ -3683,6 +3699,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &206999464
 GameObject:
@@ -4047,6 +4065,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &251435011
 GameObject:
   m_ObjectHideFlags: 0
@@ -4366,6 +4386,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &256347812
 GameObject:
   m_ObjectHideFlags: 0
@@ -4684,6 +4706,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &318302016
 GameObject:
@@ -5210,9 +5234,11 @@ MonoBehaviour:
     line: 8
     index: 0
     isObstacle:
-      Value: 1
+      Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 1
 --- !u!1 &348310621
 GameObject:
   m_ObjectHideFlags: 0
@@ -5531,6 +5557,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &359558947
 GameObject:
@@ -5851,6 +5879,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &366486515
 GameObject:
   m_ObjectHideFlags: 0
@@ -6170,6 +6200,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &373823542
 GameObject:
   m_ObjectHideFlags: 0
@@ -6486,9 +6518,11 @@ MonoBehaviour:
     line: 8
     index: 8
     isObstacle:
-      Value: 1
+      Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 1
 --- !u!1 &387022201
 GameObject:
   m_ObjectHideFlags: 0
@@ -6807,6 +6841,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &394500852
 GameObject:
@@ -9412,6 +9448,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &444674265
 GameObject:
   m_ObjectHideFlags: 0
@@ -9731,6 +9769,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &451125869
 GameObject:
   m_ObjectHideFlags: 0
@@ -10049,6 +10089,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &497144118
 GameObject:
@@ -10409,6 +10451,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &532947424
 GameObject:
   m_ObjectHideFlags: 0
@@ -10727,6 +10771,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &635132225
 GameObject:
@@ -11047,6 +11093,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &655270739
 GameObject:
   m_ObjectHideFlags: 0
@@ -11365,6 +11413,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &668980687
 GameObject:
@@ -11685,6 +11735,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &695237248
 GameObject:
   m_ObjectHideFlags: 0
@@ -12001,9 +12053,11 @@ MonoBehaviour:
     line: 0
     index: 0
     isObstacle:
-      Value: 1
+      Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 1
 --- !u!1 &706910042
 GameObject:
   m_ObjectHideFlags: 0
@@ -12322,6 +12376,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &755159589
 GameObject:
@@ -12642,6 +12698,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &765938957
 GameObject:
   m_ObjectHideFlags: 0
@@ -12960,6 +13018,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &778720529
 GameObject:
@@ -13314,6 +13374,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &820688852
 GameObject:
   m_ObjectHideFlags: 0
@@ -13632,6 +13694,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &840925658
 GameObject:
@@ -13952,6 +14016,8 @@ MonoBehaviour:
       Value: 1
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &849652684
 GameObject:
   m_ObjectHideFlags: 0
@@ -14271,6 +14337,8 @@ MonoBehaviour:
       Value: 1
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &860971341
 GameObject:
   m_ObjectHideFlags: 0
@@ -14589,6 +14657,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &875301228
 GameObject:
@@ -14943,6 +15013,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &956166344
 GameObject:
   m_ObjectHideFlags: 0
@@ -15262,6 +15334,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &957697188
 GameObject:
   m_ObjectHideFlags: 0
@@ -15580,6 +15654,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &987400659
 GameObject:
@@ -15946,6 +16022,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1018457175
 GameObject:
   m_ObjectHideFlags: 0
@@ -16265,6 +16343,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1025981626
 GameObject:
   m_ObjectHideFlags: 0
@@ -16581,9 +16661,11 @@ MonoBehaviour:
     line: 0
     index: 8
     isObstacle:
-      Value: 1
+      Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 1
 --- !u!1 &1028141769
 GameObject:
   m_ObjectHideFlags: 0
@@ -16942,6 +17024,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1001 &1097557742
 PrefabInstance:
@@ -17506,6 +17590,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1140842023
 GameObject:
   m_ObjectHideFlags: 0
@@ -17824,6 +17910,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &1147151553
 GameObject:
@@ -18144,6 +18232,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1194522652
 GameObject:
   m_ObjectHideFlags: 0
@@ -18460,9 +18550,11 @@ MonoBehaviour:
     line: 0
     index: 4
     isObstacle:
-      Value: 1
+      Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 1
 --- !u!1 &1242368506
 GameObject:
   m_ObjectHideFlags: 0
@@ -18781,6 +18873,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &1250657288
 GameObject:
@@ -19101,6 +19195,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1260348151
 GameObject:
   m_ObjectHideFlags: 0
@@ -19420,6 +19516,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1310930388
 GameObject:
   m_ObjectHideFlags: 0
@@ -19738,6 +19836,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &1314470146
 GameObject:
@@ -20098,6 +20198,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1344589989
 GameObject:
   m_ObjectHideFlags: 0
@@ -20417,6 +20519,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1362069072
 GameObject:
   m_ObjectHideFlags: 0
@@ -20735,6 +20839,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1001 &1367484111
 PrefabInstance:
@@ -21223,6 +21329,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &1379248774
 GameObject:
@@ -21717,6 +21825,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1443350359
 GameObject:
   m_ObjectHideFlags: 0
@@ -22035,6 +22145,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &1494399887
 GameObject:
@@ -22355,6 +22467,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1498110202
 GameObject:
   m_ObjectHideFlags: 0
@@ -22673,6 +22787,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &1507905451
 GameObject:
@@ -22993,6 +23109,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1529614506
 GameObject:
   m_ObjectHideFlags: 0
@@ -23311,6 +23429,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &1541964042
 GameObject:
@@ -23631,6 +23751,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1546107983
 GameObject:
   m_ObjectHideFlags: 0
@@ -23950,6 +24072,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1550497868
 GameObject:
   m_ObjectHideFlags: 0
@@ -24266,9 +24390,11 @@ MonoBehaviour:
     line: 8
     index: 4
     isObstacle:
-      Value: 1
+      Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 1
 --- !u!1 &1563576369
 GameObject:
   m_ObjectHideFlags: 0
@@ -24656,6 +24782,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1637308495
 GameObject:
   m_ObjectHideFlags: 0
@@ -24974,6 +25102,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &1666194027
 GameObject:
@@ -25294,6 +25424,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1688020362
 GameObject:
   m_ObjectHideFlags: 0
@@ -25613,6 +25745,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1706025312
 GameObject:
   m_ObjectHideFlags: 0
@@ -25931,6 +26065,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &1710087913
 GameObject:
@@ -26369,6 +26505,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1773721768
 GameObject:
   m_ObjectHideFlags: 0
@@ -26687,6 +26825,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &1788524970
 GameObject:
@@ -27007,6 +27147,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1795990398
 GameObject:
   m_ObjectHideFlags: 0
@@ -27325,6 +27467,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &1814519397
 GameObject:
@@ -27645,6 +27789,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1818826847
 GameObject:
   m_ObjectHideFlags: 0
@@ -27963,6 +28109,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &1826668011
 GameObject:
@@ -28283,6 +28431,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1838302667
 GameObject:
   m_ObjectHideFlags: 0
@@ -28602,6 +28752,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1879942534
 GameObject:
   m_ObjectHideFlags: 0
@@ -28920,6 +29072,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1001 &1960377702
 PrefabInstance:
@@ -29404,6 +29558,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1970676174
 GameObject:
   m_ObjectHideFlags: 0
@@ -29723,6 +29879,8 @@ MonoBehaviour:
       Value: 0
     isCollectable:
       Value: 0
+    isOccupied:
+      Value: 0
 --- !u!1 &1991961471
 GameObject:
   m_ObjectHideFlags: 0
@@ -30041,6 +30199,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1 &2064486768
 GameObject:
@@ -30538,6 +30698,8 @@ MonoBehaviour:
     isObstacle:
       Value: 0
     isCollectable:
+      Value: 0
+    isOccupied:
       Value: 0
 --- !u!1001 &7981800068143927248
 PrefabInstance:

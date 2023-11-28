@@ -93,6 +93,7 @@
     <EmbeddedResource Include="db.json" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="RTS\Events\GridDataEvent.qtn" />
     <None Include="RTS\QTN\CharacterLink.qtn" />
     <None Include="RTS\QTN\Grid.qtn" />
     <None Include="RTS\QTN\GridDataLink.qtn" />

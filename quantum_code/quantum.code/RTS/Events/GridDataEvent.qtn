@@ -1,0 +1,5 @@
+﻿synced event GridDataEvent
+{
+	int line;
+	int index;
+}
