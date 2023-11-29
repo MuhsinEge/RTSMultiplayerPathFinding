@@ -19,14 +19,6 @@ public class InputService : IService
     public void OnGridSelected(object sender, EntityComponentGrid grid)
     {
         if(_selectedCharacter != null) {
-            var selectedCharacterPrototype = _selectedCharacter.characterLink.Prototype;
-            if (selectedCharacterPrototype.targetLine != -1 || selectedCharacterPrototype.targetGrid != -1)
-            {
-                _selectedCharacter = null;
-                Debug.Log("Character Already Moving.");
-                return;
-            }
-
             var command = new PlayerCommandData
             {
                 entity = _selectedCharacter.GetComponent<EntityView>().EntityRef,
@@ -34,24 +26,19 @@ public class InputService : IService
             };
 
             inputCommandEvent?.Invoke(this, command);
-            _selectedCharacter = null;
         }
     }
 
     public void OnCharacterSelected(object sender, Character character)
     {
-        _selectedCharacter = null;
         var prototype = character.characterLink.Prototype;
         if (QuantumRunner.Default.Game.GetLocalPlayers()[0] != prototype.teamId)
         {
             return;
         }
-        if (prototype.targetLine != -1 && prototype.targetGrid != -1)
-        {
-            return;
-        }
-
+        _selectedCharacter?.ToggleHalo(false);
         _selectedCharacter = character;
+        _selectedCharacter.ToggleHalo(true);
     }
 
 }

@@ -9,6 +9,7 @@ public class Character : MonoBehaviour, IPointerDownHandler
 {
      [HideInInspector]public EntityComponentCharacterLink characterLink;
     private CharacterInputService _characterInputService;
+    [SerializeField]private GameObject halo;
     private void Awake()
     {
         _characterInputService = Locator.Instance.Get<CharacterInputService>();
@@ -18,6 +19,12 @@ public class Character : MonoBehaviour, IPointerDownHandler
     {
         _characterInputService.CharacterSelected(this);
     }
+
+    public void ToggleHalo(bool isSelected)
+    {
+        halo.SetActive(isSelected);
+    }
+
     private void Start()
     {
         QuantumEvent.Subscribe<EventCharacterTargetEvent>(this, OnCharacterTargetDataChangedEvent);

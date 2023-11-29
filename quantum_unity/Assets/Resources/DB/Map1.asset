@@ -6715,7 +6715,7 @@ MonoBehaviour:
     PhysicsJoints3D: []
   - CharacterLink:
     - teamId: 0
-      playerIndex: 1
+      playerIndex: 0
       targetLine: -1
       targetGrid: -1
       currentGridRef:
@@ -6946,7 +6946,7 @@ MonoBehaviour:
     PhysicsJoints3D: []
   - CharacterLink:
     - teamId: 1
-      playerIndex: 1
+      playerIndex: 0
       targetLine: -1
       targetGrid: -1
       currentGridRef:
