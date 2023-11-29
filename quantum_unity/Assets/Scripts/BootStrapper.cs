@@ -17,7 +17,8 @@ public class Bootstrapper : MonoBehaviour
         Locator.Instance.Register(new GridInputService());
         Locator.Instance.Register(new CharacterInputService());
         Locator.Instance.Register(new InputService());
+        Locator.Instance.Register(new ResourceDataService());
         // Application is ready to start, load your main scene.
-        SceneManager.LoadSceneAsync(2);
+        SceneManager.LoadSceneAsync(0);
     }
 }

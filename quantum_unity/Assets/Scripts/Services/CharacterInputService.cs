@@ -10,7 +10,6 @@ public class CharacterInputService : IService
 
     public void CharacterSelected(Character character)
     {
-        Debug.Log("character selected");
         onCharacterSelected?.Invoke(this, character);
     }
 }

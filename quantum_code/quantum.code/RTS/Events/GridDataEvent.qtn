@@ -1,6 +1,8 @@
-﻿synced event GridOccupyEvent
+﻿synced event GridDataEvent
 {
 	int line;
 	int index;
 	bool occupied;
+	bool collectable;
+	int occupierTeam;
 }

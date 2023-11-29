@@ -8,7 +8,7 @@ namespace Quantum.RTS.PathFinding
 {
     public unsafe static class PathFinder
     {
-        public unsafe static List<EntityRef> FindPath(Frame f,GridDataLink* grid, int startLine,int startIndex, int targetLine, int targetIndex)
+        public unsafe static List<EntityRef> FindPath(Frame f, GridDataLink* grid, int startLine, int startIndex, int targetLine, int targetIndex)
         {
             var nodes = ConvertGridToNode(f, grid);
             var calculatedPath = CalculatePath(nodes, nodes[startLine, startIndex], nodes[targetLine, targetIndex]);
@@ -22,17 +22,18 @@ namespace Quantum.RTS.PathFinding
             return result;
         }
 
-        private unsafe static Node[,] ConvertGridToNode(Frame f,GridDataLink* grid)
+        private unsafe static Node[,] ConvertGridToNode(Frame f, GridDataLink* grid)
         {
             Node[,] nodes = new Node[grid->gridLayout.Length, grid->gridLayout[0].grids.Length];
 
-            for(int i = 0; i < nodes.GetLength(0); i++)
+            for (int i = 0; i < nodes.GetLength(0); i++)
             {
-                for(int j = 0; j < nodes.GetLength(1); j++)
+                for (int j = 0; j < nodes.GetLength(1); j++)
                 {
-                    if (f.Unsafe.TryGetPointer(grid->gridLayout[i].grids[j], out Grid* g)) {
+                    if (f.Unsafe.TryGetPointer(grid->gridLayout[i].grids[j], out Grid* g))
+                    {
 
-                        nodes[i, j] = new Node(i, j, !g->isObstacle && !g->isOccupied);
+                        nodes[i, j] = new Node(i, j, g->isObstacle, g->isOccupied, g->isCollectable);
                     }
                 }
             }
@@ -55,12 +56,14 @@ namespace Quantum.RTS.PathFinding
                 }
                 openSet.Remove(current);
                 closedSet.Add(current);
-                // Consider neighbors based on the grid
+
                 foreach (Node neighbor in GetNeighbors(nodes, current))
                 {
-                    if (!neighbor.IsWalkable || closedSet.Contains(neighbor))
+                    if (closedSet.Contains(neighbor) || !IsNodeWalkable(neighbor,goal))
                         continue;
-                    int tentativeGScore = current.G + 1; // Assuming a uniform cost for each step
+
+                    int tentativeGScore = current.G + 1;
+
                     if (!openSet.Contains(neighbor) || tentativeGScore < neighbor.G)
                     {
                         neighbor.Parent = current;
@@ -72,6 +75,22 @@ namespace Quantum.RTS.PathFinding
                 }
             }
             return null;
+        }
+
+        private static bool IsNodeWalkable(Node node, Node goal)
+        {
+            if (node.isObstacle || node.isOccupied)
+            {
+                return false;
+            }
+
+            // Additional condition for Collectable nodes
+            if (node.isCollectable && !node.Equals(goal))
+            {
+                return false;
+            }
+
+            return true;
         }
 
         // Helper function to get neighbors based on the grid
@@ -121,23 +140,27 @@ namespace Quantum.RTS.PathFinding
         }
     }
 
-public class Node
-{
-    public int X { get; set; }
-    public int Y { get; set; }
-    public bool IsWalkable { get; set; }
-    public List<Node> Neighbors { get; set; }
-    public Node Parent { get; set; }
-    public int G { get; set; } // Cost from the start node to this node
-    public int H { get; set; } // Heuristic estimated cost from this node to the goal node
-    public int F => G + H;      // Total cost (F = G + H)
-
-    public Node(int x, int y, bool isWalkable)
+    public class Node
     {
-        X = x;
-        Y = y;
-        IsWalkable = isWalkable;
-        Neighbors = new List<Node>();
+        public int X { get; set; }
+        public int Y { get; set; }
+        public bool isObstacle { get; set; }
+        public bool isOccupied { get; set; }
+        public bool isCollectable { get; set; }
+        public List<Node> Neighbors { get; set; }
+        public Node Parent { get; set; }
+        public int G { get; set; } // Cost from the start node to this node
+        public int H { get; set; } // Heuristic estimated cost from this node to the goal node
+        public int F => G + H;      // Total cost (F = G + H)
+
+        public Node(int x, int y, bool isObstacle, bool isOccupied, bool isCollectable)
+        {
+            X = x;
+            Y = y;
+            this.isObstacle = isObstacle;
+            this.isOccupied = isOccupied;
+            this.isCollectable = isCollectable;
+            Neighbors = new List<Node>();
+        }
     }
-}
 }

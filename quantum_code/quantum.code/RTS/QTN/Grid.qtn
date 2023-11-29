@@ -1,6 +1,7 @@
 component Grid{
 	int line;
 	int index;
+    int resourceAmount;
 	bool isObstacle;
 	bool isCollectable;
 	bool isOccupied;

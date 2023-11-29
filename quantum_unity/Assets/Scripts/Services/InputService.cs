@@ -40,11 +40,14 @@ public class InputService : IService
 
     public void OnCharacterSelected(object sender, Character character)
     {
+        _selectedCharacter = null;
         var prototype = character.characterLink.Prototype;
+        if (QuantumRunner.Default.Game.GetLocalPlayers()[0] != prototype.teamId)
+        {
+            return;
+        }
         if (prototype.targetLine != -1 && prototype.targetGrid != -1)
         {
-            Debug.Log("Character Can Not Be Selected Since Its Moving.");
-            _selectedCharacter = null;
             return;
         }
 

@@ -8,89 +8,89 @@ namespace Quantum.RTS
 {
     public unsafe class CharacterMover : SystemMainThread
     {
-        private bool ShouldSkipCharacterMovement(CharacterFilter characterStruct)
-        {
+        private const int InvalidValue = -1;
 
-            if (characterStruct.characterLink->targetLine == -1 || characterStruct.characterLink->targetGrid == -1)
-            {
-                return true;
-            }
-            return false;
+        private bool ShouldSkipCharacterMovement(CharacterLink* characterLink)
+        {
+            return characterLink->targetLine == InvalidValue || characterLink->targetGrid == InvalidValue;
         }
 
-        public void HandlePathFinding(Frame f, GridFilter gridStruct, CharacterFilter characterStruct)
+        private void MoveCharacterTowards(Frame f, Transform3D* characterTransform, FPVector3 targetPosition)
         {
-            var currentGrid = characterStruct.characterLink->currentGridRef;
-            if (f.Unsafe.TryGetPointer(currentGrid, out Grid* currentGridData))
+            var direction = targetPosition - characterTransform->Position;
+            direction = direction.Normalized;
+            characterTransform->Position += direction * f.DeltaTime * 5;
+        }
+
+        private void HandleNoPathFound(Frame f, CharacterLink* characterLink, Transform3D* characterTransform, EntityRef entity)
+        {
+            characterLink->targetLine = InvalidValue;
+            characterLink->targetGrid = InvalidValue;
+            f.Events.CharacterTargetEvent(1, characterLink->teamId, characterLink->playerIndex, characterLink->targetLine, characterLink->targetGrid);
+
+            if (f.Unsafe.TryGetPointer(characterLink->currentGridRef, out Transform3D* currentGridTransform))
             {
-                if (f.Unsafe.TryGetPointer(characterStruct.entity, out Transform3D* characterTransform))
-                {
-                    var path = PathFinder.FindPath(f, gridStruct.gridData, currentGridData->line, currentGridData->index, characterStruct.characterLink->targetLine, characterStruct.characterLink->targetGrid);
-                    if (path == null || path.Count <= 1)
-                    {
-                        HandleNoPathFound(f, characterStruct, characterTransform);
-                    }
-                    else
-                    {
-                        HandlePathFound(f, characterStruct, characterTransform, path, currentGridData);
-                    }
-                }
+                var targetPosition = new FPVector3(currentGridTransform->Position.X, characterTransform->Position.Y, currentGridTransform->Position.Z);
+                characterTransform->Position = targetPosition;
             }
         }
 
-        private void HandleNoPathFound(Frame f, CharacterFilter characterStruct, Transform3D* characterTransform)
-        {
-            characterStruct.characterLink->targetLine = -1;
-            characterStruct.characterLink->targetGrid = -1;
-            if (f.Unsafe.TryGetPointer(characterStruct.characterLink->currentGridRef, out Transform3D* currentGridTransform)) // CAN BE IMPROVED
-            {
-                characterTransform->Position = currentGridTransform->Position;
-            }
-        }
-
-        private void HandlePathFound(Frame f, CharacterFilter characterStruct, Transform3D* characterTransform, List<EntityRef> path, Grid* currentGridData)
+        private void HandlePathFound(Frame f, CharacterLink* characterLink, Transform3D* characterTransform, List<EntityRef> path, Grid* currentGridData)
         {
             var targetGrid = path[1];
             if (f.Unsafe.TryGetPointer(targetGrid, out Transform3D* targetGridTransform))
             {
                 var targetPosition = new FPVector3(targetGridTransform->Position.X, characterTransform->Position.Y, targetGridTransform->Position.Z);
                 var distance = FPVector3.Distance(characterTransform->Position, targetPosition);
-                if (distance < FP._0_03)
+
+                if (distance < FP._0_05)
                 {
-                    HandleDestinationReached(f, targetPosition, characterStruct, characterTransform, path, targetGrid, currentGridData);
+                    HandleDestinationReached(f, targetPosition, characterLink, characterTransform, path, targetGrid, currentGridData);
                 }
                 else
                 {
-                    MoveCharacter(f, characterTransform, targetPosition, distance);
+                    MoveCharacterTowards(f, characterTransform, targetPosition);
                 }
-
             }
         }
 
-        private void HandleDestinationReached(Frame f, FPVector3 targetPosition, CharacterFilter characterStruct, Transform3D* characterTransform, List<EntityRef> path, EntityRef targetGrid, Grid* currentGridData)
+        private void HandleDestinationReached(Frame f, FPVector3 targetPosition, CharacterLink* characterLink, Transform3D* characterTransform, List<EntityRef> path, EntityRef targetGrid, Grid* currentGridData)
         {
-            if (path.Count == 2 && path[0] == characterStruct.characterLink->currentGridRef)
-            {
-                characterStruct.characterLink->targetLine = -1;
-                characterStruct.characterLink->targetGrid = -1;
-            }
             currentGridData->isOccupied = false;
-            f.Events.GridOccupyEvent(currentGridData->line, currentGridData->index, false);
-
+            f.Events.GridDataEvent(currentGridData->line, currentGridData->index, false, false, -1);
             if (f.Unsafe.TryGetPointer(targetGrid, out Grid* targetGridData))
             {
                 targetGridData->isOccupied = true;
-                f.Events.GridOccupyEvent(targetGridData->line, targetGridData->index,true);
+
+                if (targetGridData->isCollectable)
+                {
+                    targetGridData->isCollectable = false;
+                }
+
+                f.Events.GridDataEvent(targetGridData->line, targetGridData->index, targetGridData->isOccupied, targetGridData->isCollectable,characterLink->teamId);
             }
-            characterStruct.characterLink->currentGridRef = targetGrid;
+            characterLink->currentGridRef = targetGrid;
             characterTransform->Position = targetPosition;
         }
 
-        private void MoveCharacter(Frame f, Transform3D* characterTransform, FPVector3 targetPosition, FP distance)
+        private void HandlePathFinding(Frame f, GridDataLink* gridData, CharacterLink* characterLink, EntityRef characterEntity)
         {
-            var direction = targetPosition - characterTransform->Position;
-            direction = direction.Normalized;
-            characterTransform->Position += direction / f.UpdateRate * FP._3;
+            var currentGrid = characterLink->currentGridRef;
+            if (f.Unsafe.TryGetPointer(currentGrid, out Grid* currentGridData))
+            {
+                if (f.Unsafe.TryGetPointer(characterEntity, out Transform3D* characterTransform))
+                {
+                    var path = PathFinder.FindPath(f, gridData, currentGridData->line, currentGridData->index, characterLink->targetLine, characterLink->targetGrid);
+                    if (path == null || path.Count <= 1)
+                    {
+                        HandleNoPathFound(f, characterLink, characterTransform, characterEntity);
+                    }
+                    else
+                    {
+                        HandlePathFound(f, characterLink, characterTransform, path, currentGridData);
+                    }
+                }
+            }
         }
 
         public override void Update(Frame f)
@@ -105,11 +105,16 @@ namespace Quantum.RTS
             {
                 while (characters.Next(&characterStruct))
                 {
-                    if (ShouldSkipCharacterMovement(characterStruct))
+                    if (f.Unsafe.TryGetPointer(characterStruct.entity, out CharacterLink* link))
                     {
-                        continue;
+                        if (ShouldSkipCharacterMovement(link))
+                        {
+                            continue;
+                        }
+                       
+                        HandlePathFinding(f, gridStruct.gridData, link, characterStruct.entity);
                     }
-                    HandlePathFinding(f, gridStruct, characterStruct);
+
                 }
             }
         }

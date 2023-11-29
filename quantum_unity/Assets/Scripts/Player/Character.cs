@@ -18,4 +18,18 @@ public class Character : MonoBehaviour, IPointerDownHandler
     {
         _characterInputService.CharacterSelected(this);
     }
+    private void Start()
+    {
+        QuantumEvent.Subscribe<EventCharacterTargetEvent>(this, OnCharacterTargetDataChangedEvent);
+    }
+
+    private void OnCharacterTargetDataChangedEvent(EventCharacterTargetEvent e)
+    {
+        if(e.team == characterLink.Prototype.teamId && e.index == characterLink.Prototype.playerIndex)
+        {
+            characterLink.Prototype.targetLine = e.targetLine;
+            characterLink.Prototype.targetGrid = e.targetGrid;
+        }
+       
+    }
 }

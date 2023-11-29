@@ -18,10 +18,11 @@ public class GridLine
         }
     }
 
-    public void InformDataChanged(int index, bool isOccupied)
+    public void InformDataChanged(int index, bool isOccupied, bool isCollectable)
     {
         var grid = line[index];
         grid._gridData.Prototype.isOccupied = isOccupied;
-        grid.UpdateView();
+        grid._gridData.Prototype.isCollectable = isCollectable;
+        grid.UpdateState();
     }
 }

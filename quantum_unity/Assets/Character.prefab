@@ -279,3 +279,6 @@ MonoBehaviour:
   Prototype:
     teamId: 0
     playerIndex: 1
+    targetLine: 0
+    targetGrid: 0
+    currentGridRef: {fileID: 0}

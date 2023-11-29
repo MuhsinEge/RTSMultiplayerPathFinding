@@ -10,7 +10,6 @@ public class GridInputService : IService
 
     public void GridSelected(EntityComponentGrid grid)
     {
-        Debug.Log("Selected grid");
         onGridSelected?.Invoke(this, grid);
     }
 }

@@ -1,0 +1,8 @@
+﻿synced event CharacterTargetEvent
+{ 
+    int id;
+	int team;
+	int index;
+	int targetLine;
+	int targetGrid;
+}
