@@ -3,7 +3,7 @@ using UnityEngine;
 using ServiceLocator;
 using Quantum;
 
-public class GridLayoutEntity : MonoBehaviour 
+public class GridLayoutEntity : MonoBehaviour
 {
     public GridLine[] grids;
     private ResourceDataService _resourceDataService;

@@ -9,16 +9,12 @@ public class Bootstrapper : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     public static void Initiailze()
     {
-        // Initialize default service locator.
         Locator.Initialize();
         Application.targetFrameRate = 60;
-
-        // Register all your services next.
         Locator.Instance.Register(new GridInputService());
         Locator.Instance.Register(new CharacterInputService());
         Locator.Instance.Register(new InputService());
         Locator.Instance.Register(new ResourceDataService());
-        // Application is ready to start, load your main scene.
         SceneManager.LoadSceneAsync(0);
     }
 }

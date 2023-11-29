@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class GridLine 
+public class GridLine
 {
     public GridEntity[] line;
     private int _lineIndex;
@@ -13,7 +13,7 @@ public class GridLine
         int counter = 0;
         foreach (var grid in line)
         {
-            grid.Initialize(gridInputService,_lineIndex,counter);
+            grid.Initialize(gridInputService, _lineIndex, counter);
             counter++;
         }
     }

@@ -18,7 +18,7 @@ public class ResourceUIUpdater : MonoBehaviour
     }
     private void Start()
     {
-        _resourceDataService.playerResourceEvent += (obj, data) => UpdateResourceText(data.teamId, data.resourceAmount);
+        _resourceDataService.playerResourceEvent += OnResourceEvent;
         StartCoroutine(InitialUpdate());
     }
 
@@ -27,6 +27,11 @@ public class ResourceUIUpdater : MonoBehaviour
         yield return new WaitUntil(() => QuantumRunner.Default.Game.GetLocalPlayers().Length > 0 == true);
         UpdateResourceText(0, 0);
         UpdateResourceText(1, 0);
+    }
+
+    private void OnResourceEvent(object sender, PlayerResourceEventData eventData)
+    {
+        UpdateResourceText(eventData.teamId, eventData.resourceAmount);
     }
 
     private void UpdateResourceText(int id, int amount)

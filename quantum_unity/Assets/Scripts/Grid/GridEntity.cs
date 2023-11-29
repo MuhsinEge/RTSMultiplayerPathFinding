@@ -8,11 +8,12 @@ using UnityEngine.EventSystems;
 [System.Serializable]
 public class GridEntity : MonoBehaviour, IPointerDownHandler
 {
-    GridInputService _gridInputService;
     [HideInInspector]public EntityComponentGrid _gridData;
     [SerializeField] private TextMeshProUGUI amountTxt;
+
     private Color _initialColor;
     private MeshRenderer _renderer;
+    private GridInputService _gridInputService;
     public void Initialize(GridInputService gridInputService, int gridLine, int gridIndex)
     {
         _gridData = GetComponent<EntityComponentGrid>();

@@ -84,7 +84,6 @@ namespace Quantum.RTS.PathFinding
                 return false;
             }
 
-            // Additional condition for Collectable nodes
             if (node.isCollectable && !node.Equals(goal))
             {
                 return false;
@@ -93,7 +92,6 @@ namespace Quantum.RTS.PathFinding
             return true;
         }
 
-        // Helper function to get neighbors based on the grid
         private static IEnumerable<Node> GetNeighbors(Node[,] grid, Node node)
         {
             int maxX = grid.GetLength(0);
@@ -102,11 +100,10 @@ namespace Quantum.RTS.PathFinding
             int x = node.X;
             int y = node.Y;
 
-            // Check and add valid neighbors
-            if (x > 0) yield return grid[x - 1, y]; // Left
-            if (x < maxX - 1) yield return grid[x + 1, y]; // Right
-            if (y > 0) yield return grid[x, y - 1]; // Top
-            if (y < maxY - 1) yield return grid[x, y + 1]; // Bottom
+            if (x > 0) yield return grid[x - 1, y];
+            if (x < maxX - 1) yield return grid[x + 1, y];
+            if (y > 0) yield return grid[x, y - 1];
+            if (y < maxY - 1) yield return grid[x, y + 1];
         }
 
         private static Node GetLowestFScoreNode(List<Node> nodes)
@@ -124,7 +121,6 @@ namespace Quantum.RTS.PathFinding
 
         private static int CalculateHeuristic(Node a, Node b)
         {
-            // Manhattan distance as a heuristic
             return Math.Abs(a.X - b.X) + Math.Abs(a.Y - b.Y);
         }
 
@@ -149,9 +145,9 @@ namespace Quantum.RTS.PathFinding
         public bool isCollectable { get; set; }
         public List<Node> Neighbors { get; set; }
         public Node Parent { get; set; }
-        public int G { get; set; } // Cost from the start node to this node
-        public int H { get; set; } // Heuristic estimated cost from this node to the goal node
-        public int F => G + H;      // Total cost (F = G + H)
+        public int G { get; set; }
+        public int H { get; set; } 
+        public int F => G + H;
 
         public Node(int x, int y, bool isObstacle, bool isOccupied, bool isCollectable)
         {

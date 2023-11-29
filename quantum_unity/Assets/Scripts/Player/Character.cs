@@ -7,9 +7,10 @@ using UnityEngine.EventSystems;
 
 public class Character : MonoBehaviour, IPointerDownHandler
 {
-     [HideInInspector]public EntityComponentCharacterLink characterLink;
+    [HideInInspector] public EntityComponentCharacterLink characterLink;
+    [SerializeField] private GameObject halo;
     private CharacterInputService _characterInputService;
-    [SerializeField]private GameObject halo;
+
     private void Awake()
     {
         _characterInputService = Locator.Instance.Get<CharacterInputService>();
@@ -32,11 +33,11 @@ public class Character : MonoBehaviour, IPointerDownHandler
 
     private void OnCharacterTargetDataChangedEvent(EventCharacterTargetEvent e)
     {
-        if(e.team == characterLink.Prototype.teamId && e.index == characterLink.Prototype.playerIndex)
+        if (e.team == characterLink.Prototype.teamId && e.index == characterLink.Prototype.playerIndex)
         {
             characterLink.Prototype.targetLine = e.targetLine;
             characterLink.Prototype.targetGrid = e.targetGrid;
         }
-       
+
     }
 }

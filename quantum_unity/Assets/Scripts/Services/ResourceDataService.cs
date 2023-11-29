@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class ResourceDataService : IService
 {
-    private int localPlayerResourceAmount;
-    private int opponentResourceAmount;
+    private int _localPlayerResourceAmount;
+    private int _opponentResourceAmount;
     public EventHandler<PlayerResourceEventData> playerResourceEvent;
 
     public void UpdatePlayerResourceAmount(int teamId, int resourceAmount)
@@ -15,13 +15,13 @@ public class ResourceDataService : IService
         var id = QuantumRunner.Default.Game.GetLocalPlayers()[0];
         if (id == teamId)
         {
-            localPlayerResourceAmount += resourceAmount;
-            playerResourceEvent?.Invoke(this, new PlayerResourceEventData() { teamId = id, resourceAmount = localPlayerResourceAmount });
+            _localPlayerResourceAmount += resourceAmount;
+            playerResourceEvent?.Invoke(this, new PlayerResourceEventData() { teamId = id, resourceAmount = _localPlayerResourceAmount });
         }
         else
         {
-            opponentResourceAmount += resourceAmount;
-            playerResourceEvent?.Invoke(this, new PlayerResourceEventData() { teamId = id, resourceAmount = opponentResourceAmount });
+            _opponentResourceAmount += resourceAmount;
+            playerResourceEvent?.Invoke(this, new PlayerResourceEventData() { teamId = id, resourceAmount = _opponentResourceAmount });
         }
     }
 }

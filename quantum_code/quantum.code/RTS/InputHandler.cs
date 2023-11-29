@@ -11,10 +11,8 @@ namespace Quantum.RTS
             input = *f.GetPlayerInput(characterLink->teamId);
             if (input.character == filter.entity)
             {
-                Log.Debug("Girdi2");
                 if (input.selectedGrid != -1 && input.selectedGrid != -1)
                 {
-                    Log.Debug("Girdi3");
                     characterLink->targetLine = input.selectedLine;
                     characterLink->targetGrid = input.selectedGrid;
                     f.Events.CharacterTargetEvent(0,characterLink->teamId, characterLink->playerIndex, characterLink->targetLine, characterLink->targetGrid);
